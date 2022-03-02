@@ -1,0 +1,47 @@
+[
+	{
+		"id" : 1,
+		"soal" : "Berikut adalah cara pembuatan magnet, kecuali ... ",
+		"a" : "Menggosok",
+		"b" : "Induksi",
+        "c" : "Arus listrik bolak-balik",
+        "d" : "Elektromagnetik",
+        "jawaban" : "C"
+	},
+    {
+		"id" : 2,
+		"soal" : "Sifat kemagnetan suatu logam dapat dihilangkan dengan cara berikut, kecuali ...",
+		"a" : "dipanaskan",
+		"b" : "didinginkan",
+        "c" : "dijatuhkan",
+        "d" : "dialiri arus bolak balik",
+        "jawaban" : "B" 
+	},
+    {
+		"id" : 3,
+		"soal" : "Membuat magnet dengan cara elektromagnetik dapat dilakukan dengan cara ...",
+		"a" : "Melilitkan kawat menghantar pada besi atau baja",
+		"b" : "Mengalirkan arus AC melalui solenoide berinti logam",
+        "c" : "Mengalirkan arus DC melalui kumparan berinti besi",
+        "d" : "Mengalirkan arus searah melalui batang besi",
+        "jawaban" : "C" 
+	},
+    {
+		"id" : 4,
+		"soal" : "Hal di bawah ini yang menunjukkan peristiwa terjadinya induksi magnet adalah ...",
+		"a" : "Hilangnya sifat magnet dalam medan listrik",
+		"b" : "Besi menjadi magnet di dalam medan magnet",
+        "c" : "Berubahnya kutub magnet dalam medan listrik",
+        "d" : "Berkurangnya daya magnet dalam medan magnet",
+        "jawaban" : "B"
+	},
+    {
+		"id" : 5,
+		"soal" : "Berikut ini bukan cara untuk membuat magnet adalah ...",
+		"a" : "Paku dililiti kawat berisolasi dan dialiri listrik",
+		"b" : "Besi lunak diletakkan di sekitar magnet",
+        "c" : "Besi digosok dengan magnet ke satu arah",
+        "d" : "Baja digosok-gosok dengan magnet ke segala arah",
+        "jawaban" : "D"
+	}
+]
