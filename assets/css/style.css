@@ -70,6 +70,17 @@
 	padding: 5px;
 }
 
+.btnkuis{
+	width: 2.7rem; 
+	border: 2px dotted green;
+}
+
+.bord {
+	border: 2px solid green;
+	padding-bottom: 10px;
+}
+
+
 /* CSS diatas yang dipakai */
 .div2 {
 	float: left;
@@ -116,11 +127,6 @@
 }
 .active{
 	background-color: cornflowerblue;
-}
-
-.btnkuis{
-	width: 2.7rem; 
-	border: 2px dotted blue;
 }
 
 .info{
@@ -243,13 +249,6 @@
 	width: 50%;
 }
 
-.bord {
-	border: 2px solid blue;
-	padding-bottom: 10px;
-}
-
-
-
 .subrangkum{
 	width: 35%;
 }
@@ -297,6 +296,20 @@
         position: relative;
         top: 0px;
     }
+
+	.bordU {
+		width: auto; 
+		height: 100%; 
+		border: 3px dashed green;
+	}
+
+	.mengamati {
+		width: 55%; 
+		color: white; 
+		border: 2px solid green; 
+		background: green;
+		padding: 4px;
+	}
 	
 	.data {
 		width: 100%;
@@ -340,22 +353,8 @@
 		font-weight: bold;
 	  }
 
-	.mengamati {
-		width: 55%; 
-		color: white; 
-		border: 2px solid blue; 
-		background: blue;
-		padding: 4px;
-	}
-
 	.subrangkum{
 		width: 60%;
-	}
-
-	.bordU {
-		width: auto; 
-		height: 100%; 
-		border: 3px dashed blue;
 	}
 
 	.headmateri {

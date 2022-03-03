@@ -1,47 +1,47 @@
 [
 	{
 		"id" : 1,
-		"soal" : "Perhatikan pernyataan-pernyataan berikut ; <br> (1) Memiliki dua kutub yaitu selatan dan utara <br> (2) Kutub senama saling tarik-menarik <br> (3) Kutub senama akan tolak-menolak <br> (4) Gaya terbesar magnet berada pada kutub-kutubnya <br> (5) Gaya terbesar magnet berapa pada bagian tengahnya <br> Pernyataan yang benar tentang sifat-sifat magnet adalah ... ",
-		"a" : "(1), (2) dan (3)",
-		"b" : "(1), (3) dan (5)",
-        "c" : "(1), (3) dan (4)",
-        "d" : "(2), (4) dan (5)",
+		"soal" : "Soal 1",
+		"a" : "Jawaban Salah",
+		"b" : "Jawaban Salah",
+        "c" : "Jawaban Benar",
+        "d" : "Jawaban Salah",
         "jawaban" : "C"
 	},
     {
 		"id" : 2,
-		"soal" : "Benda yang ditarik lemah oleh magnet disebut ...",
-		"a" : "Paramagnetik",
-		"b" : "Diamagnetik",
-        "c" : "Neomagnetik",
-        "d" : "Feromagnetik",
+		"soal" : "Soal 2",
+		"a" : "Jawaban Benar",
+		"b" : "Jawaban Salah",
+        "c" : "Jawaban Salah",
+        "d" : "Jawaban Salah",
         "jawaban" : "A" 
 	},
     {
 		"id" : 3,
-		"soal" : "Contoh dari benda diamagnetik adalah ...",
-		"a" : "Nikel",
-		"b" : "Emas",
-        "c" : "Alumunium",
-        "d" : "Besi",
+		"soal" : "Soal 3",
+		"a" : "Jawaban Salah",
+		"b" : "Jawaban Benar",
+        "c" : "Jawaban Salah",
+        "d" : "Jawaban Salah",
         "jawaban" : "B" 
 	},
     {
 		"id" : 4,
-		"soal" : "Pernyataan yang benar tentang sifat-sifat kutub magnet adalah ...",
-		"a" : "Kutub senama magnet akan tarik menarik",
-		"b" : "Kutub senama magnet akan tolak menolak",
-        "c" : "Kutub tidak senama akan tolak menolak",
-        "d" : "Kutub selatan magnet dapat menarik semua logam",
+		"soal" : "Soal 4",
+		"a" : "Jawaban Salah",
+		"b" : "Jawaban Benar",
+        "c" : "Jawaban Salah",
+        "d" : "Jawaban Salah",
         "jawaban" : "B"
 	},
     {
 		"id" : 5,
-		"soal" : "Bagian dari magnet yang mempunyai gaya tarik terbesar adalah ...",
-		"a" : "Tengah magnet",
-		"b" : "Semua bagian",
-        "c" : "Kutub magnet",
-        "d" : "Kutub utara magnet",
+		"soal" : "Soal 5",
+		"a" : "Jawaban Salah",
+		"b" : "Jawaban Salah",
+        "c" : "Jawaban Benar",
+        "d" : "Jawaban Salah",
         "jawaban" : "C"
 	}
 ]
