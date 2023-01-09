@@ -1,0 +1,62 @@
+.kontenkikd{
+	margin-left: 3%;
+	margin-top: 0px;
+	width: 95%;
+	height: auto;
+	text-align: justify;
+	background-color: rgb(233, 255, 209);
+	color: #051112;
+	font-size: 14pt;
+	padding: 20px;
+	border-radius: 10px;
+	line-height: 1.5;
+    font-family: 'Bahnschrift';
+}
+.kikdmenu{
+	padding-top: 0px;
+	margin-right: -13px;
+}
+.kikdmenu a{
+    background-image: linear-gradient(rgb(14, 111, 61), #04582e);
+	padding:6%;
+	text-decoration: none;
+	color:white;
+	font-size:18px;
+	font-weight:bold;
+	display:block; 
+	border-radius: 5px 5px 5px;
+	margin-top: 6px;
+}
+.kikdmenu a:hover{
+	color: black;
+}
+.kikdmenu li{
+	list-style-type: none;
+}
+.kikdmenu .active{
+	border-left: 7px solid red;
+	background-color: white;
+	Color :black;
+}
+.kikdmenu .active:hover{
+	color:black;
+}
+.kikdisi img{
+	width:70%;
+	margin-left: -6%;
+}
+.borderinfo{
+    height:320px;
+    overflow-y:auto;
+    overflow-x: hidden;
+    font-family:'Bahnschrift';
+    font-size:17px;
+    line-height:1.5;
+    padding:2%;
+    text-align: justify ;
+   
+    color:black;
+       padding: 10px;
+       border-radius: 20px 5px 5px 5px;
+    border-color: #db1a1a;
+}

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Informasi | Zat</title>
+    <title>Informasi</title>
 
     <!-- Custom fonts for this template-->
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -20,6 +20,7 @@
     <!-- Custom styles for this template-->
     <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/kikd.css" rel="stylesheet">
 
 </head>
 
@@ -37,7 +38,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top shadow">
+                <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top shadow " style= "background-image: linear-gradient(rgb(26, 117, 70) , #08512e)"; >
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -46,54 +47,49 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between">
-                        <a href="index.html"><h1 class="h3 mb-0 text-white"><img src="assets/img/home2.png" class="img-fluid" alt=""> Kemagnetan</h1></a>
+                        <a href="/index.html"><h1 class="h3 mb-0 text-white">  <i class="fa fa-home"></i><img src="" class="img-fluid" alt=""></h1></a>
                     </div>
 
                 </nav>
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid">
+                <div class="container-fluid" >
 
                     <!-- Content Row -->
                     <div class="row">
-                        <div class="col-sm-2 mt-1">
+                        <div class="col-sm-2 mt-1 ">
+                            <div class="kikdmenu ">
                             <div id="list-example" class="list-group">
-                                <a id="btninfo" class="list-group-item list-group-item-action  active" onclick="info()" style="cursor: pointer;">Informasi Aplikasi</a>
+                                <a id="btninfo" class="list-group-item list-group-item-action   active" onclick="info()" style="cursor: pointer;">Informasi Aplikasi</a>
                                 <a id="btndafus" class="list-group-item list-group-item-action" onclick="dafus()" style="cursor: pointer;">Daftar Pustaka</a>
                                 <a id="btnpetunjuk" class="list-group-item list-group-item-action" onclick="petunjuk()" style="cursor: pointer;">Petunjuk Aplikasi</a>
+                                <a id="btnpetakonsep" class="list-group-item list-group-item-action" onclick="petakonsep()" style="cursor: pointer;">Peta Konsep</a>
                             </div>
-                        </div>
+                        </div></div>
                         <div class="col-sm-10 mt-1">
                             <div id="info">
-                                <div class="card text-white bg-primary mb-3" style="max-width: 100%;">
-                                    <div class="card-body">
-                                      <h3 class="card-title">INFORMASI APLIKASI</h3>
+                                <div class="card text-white border-top  mb-3 " style="max-width: 100%; font-family:Bahnschrift; background-color:rgb(233, 255, 209) ;">
+                                    <div class="card-body borderinfo">
+                                      <h3 class="card-title text-center" style="font-family:Bahnschrift;" ><STRONG>MEDIA</STRONG></h3>
                                       <hr color="white" width="100%" style="height: 3px;">
-                                      <h4 class="card-title text-center">Perihal</h4>
-                                      <hr style="border-top: 3px dashed white;" width="25%">
-                                      <h5 class="card-title text-justify">
-                                          Media Pembelajaran ini dibuat untuk memenuhi persyaratan dalam menyelesaikan Program Strata-1 Prodi dengan judul tugas akhir : <br>
-                                          "Judul"
+                                      <h5 class="card-title text-justify text-center" style="font-family:Bahnschrift; font-size: 19px; ">
+                                          Media Pembelajaran ini dibuat untuk memenuhi persyaratan dalam <br>menyelesaikan Program Strata-1 Prodi dengan judul tugas akhir :
+                                          "Gaya"
                                       </h5>
-                                      <hr style="border-top: 3px dashed white;" width="100%">
-                                      <h4 class="card-title text-center">Tentang Author</h4>
-                                      <hr style="border-top: 3px dashed white;" width="25%">
+
+                                      <hr color="white" width="100%" style="height: 3px;">
                                       <h5 class="card-title">
-                                        <table class="info">
+                                        <table class="info" style="font-family:Bahnschrift; font-size: 19px; ">
                                             <tr>
                                                 <td>Nama </td>
                                                 <td class="pl-2 pr-2"> : </td>
-                                                <td> - </td>
+                                                <td> M. Nor Alfisyahrin Frdaus </td>
                                             </tr>
-                                            <tr>
-                                                <td>Email </td>
-                                                <td class="pl-2 pr-2"> : </td>
-                                                <td> -m</td>
-                                            </tr>
+                                            
                                             <tr>
                                                 <td>Dosen Pembimbing 1 </td>
-                                                <td class="pl-2 pr-2"> : </td>
+                                                <td class="pl-2 pr-2"> :  </td>
                                                 <td> -</td>
                                             </tr>
                                             <tr>
@@ -104,17 +100,17 @@
                                             <tr>
                                                 <td>Program Studi </td>
                                                 <td class="pl-2 pr-2"> : </td>
-                                                <td> -</td>
+                                                <td> Pendidikan Komputer</td>
                                             </tr>
                                             <tr>
                                                 <td>Fakultas </td>
                                                 <td class="pl-2 pr-2"> : </td>
-                                                <td> -</td>
+                                                <td> Keguruan ilmu Pendidikan</td>
                                             </tr>
                                             <tr>
                                                 <td>Universitas </td>
                                                 <td class="pl-2 pr-2"> : </td>
-                                                <td> -</td>
+                                                <td> Universitas Lambung Mangkurat</td>
                                             </tr>
                                         </table>
                                       </h5>
@@ -122,10 +118,10 @@
                                 </div>
                             </div>
                             <div id="dafus">
-                                <div class="card text-white bg-primary mb-3" style="max-width: 80%;">
+                                <div class="card text-white  mb-3" style="max-width: 80%;  font-family:Bahnschrift; background-color: rgb(233, 255, 209); ">
                                     <div class="card-body">
-                                      <h3 class="card-title">DAFTAR PUSTAKA</h3>
-                                      <hr color="white" width="100%" style="height: 3px;">
+                                    <h3 class="card-title text-center" style="font-family:Bahnschrift; color: black;" ><STRONG>Daftar Pustaka</STRONG></h3>
+                                      <hr color="white" width="100%" style="height: 3px; ">
                                       <h5 class="card-title text-justify">
                                         -
                                       </h5>
@@ -133,13 +129,13 @@
                                 </div>
                             </div>
                             <div id="petunjuk">
-                                <div class="card text-white bg-primary mb-3" style="max-width: 80%;">
+                                <div class="card text-white  mb-3" style="max-width: 80%; font-family:Bahnschrift; background-color: rgb(233, 255, 209); ">
                                     <div class="card-body">
-                                      <h3 class="card-title">PETUNJUK APLIKASI</h3>
+                                        <h3 class="card-title text-center" style="font-family:Bahnschrift; color: black;" ><STRONG>Petunjuk APlikasi</STRONG></h3>
                                       <hr color="white" width="100%" style="height: 3px;">
-                                      <h5 class="card-title text-justify">
+                                      <h5 class="card-title text-justify" style="color:black ; font-size:19px;">
                                         Gambar di bawah ini adalah tampilan pada halaman materi. <br>
-                                        <img src="assets/img/petunjuk.png" alt="" class="rounded img-thumbnail" style="border: 1px solid white;"><br>
+                                        <img src="assets/img/.png" alt="" class="rounded img-thumbnail" style="border: 1px solid white;"><br>
                                         Keterangan : <br>
                                         <ul>
                                             <li>
@@ -156,6 +152,24 @@
                                     </div>
                                 </div>
                             </div>
+                                
+                            
+                            <div id="petakonsep" hidden>
+                                <div class="card text-white  mb-3" style="max-width: 100%;  font-family: Bahnschrift; background-color: rgb(233, 255, 209); ">
+                                    <div class="card-body">
+                                        <div class="kikdisi">
+                                            <center>
+                                                <h3 class="card-title text-center" style="font-family:Bahnschrift; color: black;" ><STRONG>Peta Konsep</STRONG></h3>
+                                                <hr color="white" width="100%" style="height: 3px; ">
+
+                                                <img src="assets/img/ppetakonsep.png"/>
+                                            </center>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -223,8 +237,9 @@
     <!-- Page level custom scripts -->
     <script src="assets/js/demo/chart-area-demo.js"></script>
     <script src="assets/js/demo/chart-pie-demo.js"></script>
+
+    <!-- script pribadi -->
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/load-mathjax.js"></script>
 
 </body>
 

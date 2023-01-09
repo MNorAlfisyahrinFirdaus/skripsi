@@ -1,0 +1,95 @@
+[{
+    "soal0": {
+        "soal": "Contoh gaya dapat membuat benda diam menjadi bergerak adalah . . .",
+        "a": "a. kelereng yang awalnya diam dan dapat bergerak setelah disentil ",
+        "b": "b. bola pimpong yang memantul  ",
+        "c": "c. bola yang ditangkap kiper  ",
+        "d": "d. kaleng kosong akan penyok setelah diinjak  ",
+        "benar": "a"
+    }
+},{
+    "soal1": {
+        "soal":"Gaya dapat menyebabkan benda bergerak lebih cepat, contohnya dikehidupan sehari-hari adalah . . .",
+        "a": "a. Bola yang ditangkap kiper",
+        "b": "b. Lilin mainan yang dirubah bentuk menjadi binatang",
+        "c": "c. Mengayuh sepeda semakin cepat",
+        "d": "d. Mendorong meja yang awalnya diam",
+        "benar": "c"        
+    }        
+},{
+    "soal2": {
+        "soal": "Bola pimpong atau bola kasti dilempar kearah timbok berubah arah setelah membentur tembok, contoh dari gaya dapat menyebabkan...",
+        "a": "a. CaCO<sub>3</sub>(s) ",
+        "b": "b. Laju berkurangnya konsentrasi HCl",
+        "c": "c. Laju terbentuknya CaCl<sub>2</sub> ",
+        "d": "d. Laju Pembentukan CO<sub>2</sub>",
+        "e": "e. Laju pembentukan air",
+        "benar":"d"
+
+    }
+},{
+    "soal3": {
+        "soal": "Bola yang melaju kencang akan diam setelah ditangkap oleh kiper (penjaga gawang), contoh dari gaya dapat menyebabkan  ...",
+        "a": "a. Benda diam menjadi bergerak ",
+        "b": "b. Benda bergerak menjadi diam  ",
+        "c": "c. Benda bergerak lebih cepat ",
+        "d": "d. Benda berubah arah",
+        "benar": "b"
+    }
+},{
+    "soal4": {
+        "soal": "Gaya dapat mengubah gerak suatu benda, kecuali ....",
+        "a": "a. Gaya dapat menyebabkan arah benda ",
+        "b": "b. Gaya dapat menyebabkan benda bergerak diam ",
+        "c": "c. Gaya dapat menyebabkan benda diam bergerak",
+        "d": "d. Gaya menyebabkan cahaya merambat lurus",
+        "benar": "d"
+    }
+    
+   
+},{
+    "soal5": {
+        "soal": "Mobil yang menabrak tiang akan penyok. Hal ini menunjukkan sifat gaya ....",
+        "a": "a. Menyebabkan benda diam menjadi bergerak",
+        "b": "b. Mengubah arah gerak benda ",
+        "c": "c. Mengubah bentuk benda",
+        "d": "d. Menghentikan gerak benda",
+        "benar": "d"
+    }
+},{
+    "soal6": {
+        "soal": "Tanah liat atau plastisin ditekan, bentuknya akan ....",
+        "a": "a. Sama ",
+        "b": "b. Tidak berubah ",
+        "c": "c. Tetap",
+        "d": "d. Berubah",
+        "benar": "d"
+    }
+},{
+    "soal7": {
+        "soal": "Di bawah ini menunjukkan bahwa gaya memengaruhi bentuk benda, kecuali  ....",
+        "a": "a. Menjatuhkan piring keramik  ",
+        "b": "b. Menjatuhkan bola tenis ",
+        "c": "c. Menekan plastisin",
+        "d": "d. Menjatuhkan pot keramik",
+        "benar": "b"
+    }
+},{
+    "soal8": {
+        "soal": "Benda yang tidak dapat terapung dalam permukaan air adalah....",
+        "a": "a. Bola ",
+        "b": "b. Gabus ",
+        "c": "c. Batu",
+        "d": "d. Kayu",
+        "benar": "c"
+    }
+},{
+    "soal9": {
+        "soal": "Kelompok benda yang dapat tenggelam di dalam air adalah ....",
+        "b": "a. Gabus, plastik, dan buku ",
+        "a": "b. Gabus, garpu, dan gelang ",
+        "c": "c. Batu, bola, dan kantong plastik",
+        "d": "d. Batu, kelereng, dan besi",
+        "benar": "d"
+    }
+}]

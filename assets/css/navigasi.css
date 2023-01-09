@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  .navigasibawah {
+    margin-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 690px;
+
+   
+
+  }
+  .navigasibawah a{
+   
+    font-family: 'Poppins';
+    font-size: 19px;
+   
+
+  }
+  .Nav-Lanjut{
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    margin-top: -15px;
+    padding-bottom:10px;
+    padding-left: 580px;
+
+}
+#navigasi.full{
+    margin-left: 0px;
+}
+.Nav-Lanjut a{
+  
+    text-decoration: none;
+    color: rgb(239, 236, 236);
+    font-family: 'Bahnschrift';
+    font-size: 14px;
+    font-weight: bold;
+     
+}
+.Nav-Lanjut .Lanjut{
+    display: inline-block;
+    border: #0e4323 solid 2px;
+    border-radius: 5px;
+    padding: 1.5px;
+    padding-left: 27px;
+    padding-right: 27px;
+    font-size: 16.5px;
+    background-color:rgb(20, 134, 75);
+}
+.Nav-Lanjut .Lanjut:hover {
+    cursor: pointer;
+    background-color: rgb(53, 74, 62);
+}
+
+
+
+  button {
+    background-color:  rgb(20, 134, 75);
+    font-family: 'Bahnschrift';
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    border-radius:3px ;
+    font-weight: bold;
+  }
+  button a{
+    text-decoration: none;
+    color: white;
+  }
+  .btn1{
+    background-color: rgb(233, 241, 154);
+    color: black;
+   
+  }
+  .kuisinter a{
+    background: rgb(40, 108, 72);
+    color: white;
+    border: 2px solid  rgb(52, 54, 54);
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin-top: 10px;
+    font-family: 'Bahnschrift'; 
+    font-size: 17px;
+   
+  }
+  .cekjawabinterganda{
+    background: rgb(44, 189, 165);
+    color: white;
+    border: 2px solid  rgb(110, 115, 117);
+    border-radius: 4px;
+    padding: 8px 10px;
+    margin-top: 10px;
+    font-family: 'Bahnschrift'; 
+    font-size: 19px;
+  }
+
+  .ulanginterganda{
+    background: rgb(223, 223, 76);
+    color: white;
+    border: 2px solid  rgb(110, 115, 117);
+    border-radius: 4px;
+    padding: 8px 10px;
+    margin-top: 10px;
+    font-family: 'Bahnschrift'; 
+    font-size: 19px;
+  }
+  .btnangka{
+    border-radius: 6px 5px 5px 5px;
+    padding: 2px;
+    min-width: 53px;
+    background-image: linear-gradient(#00909e, #055d65);
+    
+    
+  }
+  .btnangka:hover{
+    color: black;
+  }
+
+  @media screen and (max-width: 760px) {
+  .footer{
+    position:unset;
+    top:0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  .Nav-Lanjut{
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    margin-top: 5px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+
+}
+  .navigasibawah{
+
+    background-color:initial;
+    padding:1px;
+    font-size: 4pt;
+  }
+  button {
+    padding: 6px;
+    width: auto;
+    height: 10%;
+    
+  }
+  .kuisinter a{
+    background: rgb(14, 111, 61);
+    width: auto;
+    height: auto;
+    color: white;
+    border: white 3px solid;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    
+    font-family: 'Bahnschrift'; 
+    font-size: 19px;
+    box-shadow: 0px 4px 12px 0px rgba(54, 49, 49, 0.2);
+  } 
+}

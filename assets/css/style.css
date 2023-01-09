@@ -1,46 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .valign {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
+body{
+	font-family: 'poppins';
+}
 
+.materi{
+	width:60%;
+	height:48px;
+	background-color: white;
+	margin: 8px;
+	margin-left: -13px;
+	font-family: 'Bahnschrift'; 
+	border-left: 15px solid rgb(54, 132, 89);
+	margin-top:-10px;
+	color:rgb(37, 116, 73);
+	padding-top: 10.3px;
+	padding-left:5px ;
+}
+.materi h5{
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Bahnschrift'; 
+}
+.submateri{
+	width:40%;
+	height:48px;
+	background-color: white;
+	margin-left:220px;
+	font-family: Poppins; 
+	border-bottom: 5px solid rgb(54, 132, 89);
+	margin-top:-10px;
+	color:rgb(37, 116, 73);
+	padding-top: 10.3px;
+	padding-left:15px ;
+}
+.submateri h5{
+	font-weight: bold;
+	font-size: 20px;
+	font-family: Poppins; 
+}
+.bordertujuanpembelajaran{
+	margin-top: -9px;
+	margin-left:8px ;
+	border: 1.5px solid rgb(14, 111, 61);
+	background-color:rgb(244, 248, 244);
+	border-radius: 5px;
+	font-size: 19px;
+	color:black;
+	line-height:1.5;
+	padding:0%;	
+	text-align: justify ;
+	float:left;
+	 
+	height:90%;
+	overflow-y:auto;
+	overflow-x: hidden;
+}
+.pertanyaan{
+	border-radius: 0px;
+	color: white; 
+	color: rgb(108, 129, 50); 
+	border-bottom: 2px solid rgb(41, 95, 65);
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-left: 34%;
+	width: 28%;
+	font-size: 19px;
+	font-family:'Bahnschrift' ;
+	padding: 6px;
+	margin-top: 400px;
+	
+}
+.borderpertanyaan {
+	margin-top: 9px;
+	margin-left:2px ;
+	border: 2px solid rgb(14, 111, 61);
+	border-radius: 4px;
+	font-size: 19px;
+	color:black;
+	line-height:1.5;
+	padding:1%;	
+	text-align: justify ;
+	background-color: white;  
+	height:100%;
+	width:99% ;
+	overflow-y:auto;
+	overflow-x: hidden;
+
+}
+
+.Datakegiatan {
+	border-radius: 1px 9px ;
+	color: white; 
+	border: 2px solid rgb(41, 95, 65);
+	background-color: rgb(64, 125, 91);
+	font-weight: bold;
+	text-align: center;
+	margin-left:10px;
+	margin-bottom: 3px;
+	width: 30%;
+	font-family:'Bahnschrift' ;
+	padding: 6px;
+	margin-top: -10px;
+	font-size: 19px;
+}
+.borderdatakegiatan {
+	border-radius: 1px 9px;
+	margin-top: -21.5px;
+	font-family:'Bahnschrift' ;
+	border: 1.5px solid rgb(14, 111, 61);
+	font-size: 19px;
+	background-color:rgb(245, 249, 247);
+	padding-left: 1%;
+	
+}
+.bordermarimengamati {
+	border-radius: 1px 9px;
+	margin-top: -18.7px;
+	font-family:'Bahnschrift' ;
+	border:  rgb(14, 111, 61);
+	font-size: 19px;
+	background-color:rgb(245, 249, 247);
+	padding-left: 1%;
+	
+}
+.ayo {
+	border-radius: 0px;
+	color: rgb(108, 129, 50); 
+	border-bottom: 2px solid rgb(41, 95, 65);
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: -22px;
+	margin-left: 34%;
+	width: 30%;
+	font-family:'Bahnschrift' ;
+	padding: 7px;
+	margin-top: 5px;
+		
+}
+.ayo img{
+	height: auto;
+	width: 30px;
+}
+.marimengamati {
+	border-radius: 0px;
+	color: rgb(108, 129, 50); 
+	border-bottom: 2px solid rgb(41, 95, 65);
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: -22px;
+	margin-left: 34%;
+	width: 30%;
+	font-family:'Bahnschrift' ;
+	padding: 7px;
+	margin-top: 5px;
+	
+}
+.judulawal {
+	
+	border-radius: 3px;
+	color: rgb(105, 29, 29); 
+	border-bottom: 2px solid rgb(53, 93, 53);
+
+	
+	text-align: center;
+	padding: 10px;
+	width: 30%;
+	font-family:'Bahnschrift' ;
+	
+}
+.icon{
+	font-weight: bold;	
+}
+.icon img{
+	height: auto;
+	width: 32px;
+}
+.pertanyaan img {
+	height: auto;
+	width: 30px;
+}
+.Datakegiatan img {
+	height: auto;
+	width: 30px;
+}
+.marimengamati img {
+	height: auto;
+	width: 30px;
+}
+ol{
+	font-size: 19px;
+	font-family:'Bahnschrift' ;
+}
+
+.kegiatan{
+	border: solid 2px rgb(14, 111, 61);
+
+}
+.subjudulutama {
+	
+	
+	
+	height: auto;
+	color: rgb(31, 30, 30); 
+	
+	padding: 7px;
+	border-left: 8px solid rgb(53, 93, 53);
+	border-radius: 2px;
+	display: inline-block;
+	font-family: 'Bahnschrift';
+}
+.subjudulpas {
+	
+	margin-left: 7px;
+	width: 24%; 
+	height: auto;
+	color: white; 
+	background-color: rgb(20, 134, 75);
+	padding: 7px;
+	border-radius: 2px;
+	display: inline-block;
+	font-family: 'Bahnschrift';
+}
+.subjudulpendek {
+	
+	margin-left: 7px;
+	width: 15%; 
+	height: auto;
+	color: white; 
+	background-color: rgb(20, 134, 75);
+	padding: 7px;
+	border-radius: 2px;
+	display: inline-block;
+	font-family: 'Bahnschrift';
+}
+.subjudultanggung {
+	
+	margin-left: 10px;
+	margin-top:5px ;
+	width: 27%; 
+	height: auto;
+	color: white; 
+	background-color: rgb(20, 134, 75);
+	padding: 7px;
+	border-radius: 2px;
+	display: inline-block;
+	font-family: 'Bahnschrift';
+}
+.subjudul {
+	margin-left:20px;
+	width: 40%; 
+	height: auto;
+	padding: 5px;
+	color: white; 
+	background-color: rgb(20, 134, 75);
+	font-family: 'poppins';
+	font-size: 18px;
+	padding: 10px;
+	margin-bottom: -17px;
+	border-radius: 3px;
+}
+.subjudulsetengahpanjang {
+	margin-left: 3px;
+	width: 38%; 
+	height: auto;
+	padding: 10px;
+	border-radius: 5px;
+	color: white; 
+	background-color: rgb(20, 134, 75);
+	font-family: 'Bahnschrift';
+	padding: 4px;
+}
+
+
+.macam {
+	border-radius: 8px;
+	width: 100%;
+	margin-left: -5px;
+
+	
+}
+.bong{
+	margin-top: 10px;
+}
+.subjudul3kata{
+	margin-left: 3px;
+	width: 32%; 
+	height: auto;
+	padding: 10px;
+	border-radius: 5px;
+	color: white; 
+	background-color: rgb(20, 134, 75);
+	font-family: 'Bahnschrift';
+	padding: 4px;	
+}
+.subjudul2 {
+	width: 45%; 
+	height: auto;
+	color: white; 
+	font-family: 'Bahnschrift';
+	background-color: rgb(20, 134, 75);
+	border-radius: 5px;
+	padding: 4px;
+	margin-left: 3px;
+}
+.subjudulpanjang {
+	width: 70%; 
+	height: auto;
+	color: white; 
+	border: 2px solid rgb(179, 183, 187); 
+	background-color: rgb(20, 134, 75);
+	padding: 4px;
+	border-radius: 5px;
+	font-family: 'Bahnschrift';
+}
 .bordU {
 	width: 100%; 
 	height: 445px; 
-	border: 3px dashed #6ECB63;
 }
 
-.header {
-	float: left;
-	width: 100%;
-	background-color: #6ECB63 !important;
-	padding: .5rem 1rem;
-	vertical-align: middle;
-	text-align: center !important;
+.foto img{
+	width: 240px;
 }
+.pegas img{
+	width: 300px;
+	height: 184px;
+}
+.aqua img{
+	width: 210px;
+}
+.kulkas img{
+	width: auto;
+	height: 270px;
+}
+.manfaatgravitasi img{
+	width: auto;
+	height: 190px;
+}
+.basket img{
+	width: 290px;
+	height: auto;
+}
+.semua img{
+	width: 300px;
+	height: auto;
+}
+.lumayan img{
+	width:190px;
+	height:170px;
+}
+.penggaris img{
+	width: auto;
+	height: 180px;
+}
+.terapung img{
+	max-width: 130px;
+	height: 160px;
+}
+
+.bordermateri{
+	margin-top: 15px;
+	margin-left:12px ;
+	border: 2px solid rgb(14, 111, 61);
+	border-radius: 4px;
+	font-size: 19px;
+	color:black;
+	line-height:1.5;
+	padding:1%;	
+	text-align: justify ;
+	float:left;
+	background-color: white;  
+	height:100%;	
+	overflow-y:auto;
+	overflow-x: hidden;
+	
+}
+.bordervideomateri{
+	margin-top: 28px;
+	margin-left:2px ;
+	border: 2px solid rgb(14, 111, 61);
+	border-radius: 4px;
+	font-size: 19px;
+	color:black;
+	line-height:1.5;
+	padding:1%;	
+	text-align: justify ;
+	float:left;
+	background-color: white;  
+	height:100%;
+	width:99% ;
+	overflow-y:auto;
+	overflow-x: hidden;
+
+}
+.borderpertanyaaneror{
+	margin-top: 28px;
+	margin-left:2px ;
+	border: 2px solid rgb(14, 111, 61);
+	border-radius: 4px;
+	font-size: 19px;
+	color:black;
+	line-height:1.5;
+	padding:1%;	
+	text-align: justify ;
+	float:left;
+	background-color: white;  
+	height:100%;
+	width:99% ;
+	overflow-y:auto;
+	overflow-x: hidden;
+
+}
+.borderpetunjukinter{
+	margin-top: -11px;
+	border: 1.5px solid rgb(14, 111, 61);
+	border-radius: 4px;
+	font-size: 19px;
+	background-color:white;
+	
+
+}
+.borderfoto{
+	margin-top: -10px;
+	margin-left: 10px;
+	border:  rgb(10, 72, 40);
+	border-radius: 4px;
+	font-size: 19px;
+	height: auto;
+	width: 333px;
+	border-radius: 20px;
+	
+
+}
+.borderfototehalus{
+	
+	margin-top: -10px;
+	margin-left: 10px;
+	
+	border: 2px solid #08512e;
+	
+	border-radius: 4px;
+	font-size: 19px;
+	height: auto;
+	width: 300px;
+	background-color: white;
+	
+	
+
+}
+.dropsidebar{
+border-radius: 30px ;
+}
+ 
 
 .headermateri {
-	background-color: #6ECB63;
+	background-image: linear-gradient(rgb(26, 117, 70) , #08512e);
 	color: white;
+	
+
+	
 }
+.headermaterikuis {
+	background-image: linear-gradient(rgb(26, 117, 70) , #08512e);
+	color: white;
+	height:50px ;
+	
+}
+
+	
+
+.headersubmateri{
+	width: 81%;
+	height: auto;
+	position: absolute;
+	padding-top: 1%;
+	color: black;
+  
+	background-color:#00909e;
+	font-family: 'Bahnschrift';
+	  font-size: 19px;
+	  line-height: 1.8;
+	  font-weight: 400;
+  
+	  box-shadow: 0px 0px 3px rgb(0 0 0 / 50%);
+  
+  
+  }
 
 .bodymenu {
 	left: 0px;
 	top: 100px;
 	width: 100%;
 	height: auto;
-	background: #B1E693;
+	background:#c6d4e1;
 	display: flex;
 	flex-direction: row;
+	
 }
 
 .footer{
 	width: 100%;
 	height: auto;
-	font-family: 'Libre Franklin', sans-serif;
-	background-color: #FBF4E9;
-	color: green;
+	font-family: 'Bahnschrift';
+	background-color: #05B3AF;
+	color: #51d3b2;
 }
 
 .footer p{
@@ -48,27 +517,30 @@
 }
 
 .aktif {
-	background-color: #6ECB63;
+	border-left: 7px solid red;
+	background-color: white;
+	Color :red;
+	
+}
+.aktif22 {
+	border-left: 5px solid red;
+	background-color:rgb(25, 158, 89);
+	border-radius: 3px;
+	
+	
 }
 
 .btnaktif .page-link {
 	z-index:3;
 	color:#fff;
-	background-color:green;
-	border-color:greenyellow
+	background-color:#00909e;
+	border-color:rgb(11, 18, 143);
 }
 
 .black {
 	color: black;
 }
 
-.mengamati {
-	width: 20%; 
-	color: white; 
-	border: 2px solid green; 
-	background: green;
-	padding: 5px;
-}
 
 .btnkuis{
 	width: 2.7rem; 
@@ -85,16 +557,20 @@
 .div2 {
 	float: left;
 	width: 100%;
-	height: 40px;
+	height: 40px; 	
 	border: 1px solid black;
   }
+
+.hr{
+	background-color: rgb(14, 111, 61);
+	
+}
 
 .kontainer {
 	overflow-x: scroll; /* showing scrollbars */
 	overflow-y: hidden;
 }
-
-  .div1 {
+.div1 {
 	float: left;
 	width: 100%;
 	height: 40px;
@@ -119,19 +595,43 @@
   .menu2:hover{
 	transform: scale(1.2);
   }
+  /* jumbotron */
+.jumbotron{
+    background-color:#60c28e;
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+    position: relative;
+}
 
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+.jumbotron .display-1 {
+    color:#16d6f0;
+    font-family: 'Share', cursive;
+    font-weight: bold;
+    font-size: 100px;
+    margin-top: 30px;
+    text-shadow: 5px 5px 0px #faf8f6, 10px 10px 0px #0a0304;
+  
+}
 .content{
 	background:white;
 	width: 100%;
 	height: 500px;
 }
 .active{
-	background-color: cornflowerblue;
+	background-color: #0b4c6a;
 }
 
+
 .info{
-	font-size: 18px; 
+	font-size: 19px; 
 	padding: 10px;
+	font-family: 'Bahnschrift';
+	
 }
 
 .data {
@@ -148,6 +648,9 @@
 	width: 50%;
 }
 
+.woi{
+	background-color: #bfedf1;
+}
 .tabel {
 	font-size: 14pt;
 	width: 45%;
@@ -161,21 +664,6 @@
 	font-size: 14pt;
 }
 
-.kotakDrag {
-	width: 100%;
-	height: 150px;
-	padding: 10px;
-	border: 1px solid #aaaaaa;
-	font-weight: bold;
-  }
-
-.kotakDrag2 {
-	width: auto;
-	height: 150px;
-	padding: 10px;
-	border: 1px solid #aaaaaa;
-	font-weight: bold;
-  }
 
   .isi{
 	background-color:white;
@@ -183,8 +671,8 @@
 	width: 36%;
 	overflow-y:auto;
 	overflow-x: hidden;
-	font-family:candara;
-	font-size:17px;
+	font-family:'Bahnschrift';
+	font-size:19px;
 	line-height:1.5;
 	padding:2%;
 	text-align: justify ;
@@ -200,31 +688,54 @@
 }
 
 .pembahasan{
-	border: 2px dotted blue;
+	background-color: white;
+	border:1.5px solid #0a7642;
+	border-radius: 13px ;
 }
 .pembahasan2{
 	font-weight: bold;
 }
-
-.isicontent{
-	height:100%;
-	overflow-y:auto;
-	overflow-x: hidden;
-	font-family:candara;
-	font-size:17px;
-	line-height:1.5;
-	padding:2%;
-	text-align: justify ;
-	float:left;
-	color: black;
+.pembahasan3{
+	font-weight: bold;
 }
-
+.isicontent{
+		height:100%;
+		overflow-y:auto;
+		overflow-x: hidden;
+		font-family:'Bahnschrift';
+		font-size:19px;
+		line-height:1.5;
+		padding:-2%;
+		text-align: justify ;
+		float:left;
+		
+		border-radius: 10px;
+   		padding: 10px;
+   		border: 2px  solid rgb(12, 3, 3);
+		 
+	}
+.penghalat{
+	width: 100%;
+	height: 10px;
+}
+	.isiborder{
+		height:100%;
+		width: 920px;
+		overflow-y:auto;
+		overflow-x: hidden;
+		font-family:'Bahnschrift';
+		font: size 18px;
+		line-height:1.5;
+		margin-top: 3px;
+		border: 10px ,black;
+		padding-top: 1%;
+	}
 .isicontent2{
 	height:100%;
 	overflow-y:auto;
 	overflow-x: hidden;
-	font-family:candara;
-	font-size:24px;
+	font-family:'Bahnschrift';
+	font-size:19px;
 	line-height:1.5;
 	padding:2%;
 	text-align: justify ;
@@ -235,25 +746,116 @@
 	height:100%;
 	overflow-y:auto;
 	overflow-x: auto;
-	font-family:candara;
-	font-size:17px;
+	font-family:'Bahnschrift';
+	font-size:19px;
 	line-height:1.5;
 	padding:2%;
 	text-align: justify ;
 	float:left;
 	color: black;
 }
+.dragand tr{
+	background:  rgb(216, 253, 158);
+	color: #fff;
+	font-weight: normal;
 
-.tablecek{
-	overflow-x: auto;
-	width: 50%;
 }
+
+.kotakDrag {
+	width: 100%;
+	height: 200px;
+	padding: 10px;
+	border: 2px solid  rgb(14, 111, 61);
+	background-color:  rgb(250, 255, 252);
+	font-weight: bold;
+	
+  }
+
+.kotakDrag2 {
+	width: auto;
+	height: 200px;
+	padding: 10px;
+	border: 2px solid  rgb(14, 111, 61);
+	background-color:white;
+	font-weight: bold;
+  }
+
+.isikotakdrop {
+
+ background:   rgb(32, 95, 63);
+color: white;
+border-radius: 8px 20px;
+padding: 9px 16px;
+margin-top: 10px;
+font-family: 'Bahnschrift'; 
+font-size: 17px;
+border:2px solid #08512e ;
+
+}
+.tablecek{
+	width: 50%;
+
+}
+.tablecek .tr{
+	background-color: #0a0304;
+	border: #0a0304 solid 2px; 
+
+}
+.centangpetunjuk{
+	width:10px ;
+	height:10px ;
+}
+
 
 .subrangkum{
 	width: 35%;
 }
 
-.dlm {
+.paragraf {
+	text-indent: 0.5in;
+	font-family: 'Bahnschrift';
+	font-size: 19px;
+	margin-top: 1px;
+	color: black;
+}
+.bordervideo {
+	text-indent: 0.5in;
+	font-family: 'Bahnschrift';
+	font-size: 19px;
+	margin-top: 1px;
+	margin-left: 2px;
+	color: black;
+}
+.kebawah {
+	
+	text-align: justify;
+	font-family: 'Bahnschrift';
+	font-size: 19px;
+	margin-top: 1px;
+	color: black;
+	
+	
+}
+.tujuan{
+	
+	
+		
+		font-family: 'Bahnschrift';
+		font-size: 19px;
+		margin-top: 1px;
+		color: black;
+
+		
+	
+}
+.isinggakborder {
+	text-indent: 0.5in;
+	text-align: justify;
+	padding-left: 10px;
+	font-family: 'Bahnschrift';
+	font-size: 19px;
+}
+.tex {
 	text-indent: 0.5in;
 	text-align: justify;
 }
@@ -267,16 +869,54 @@
 }
 
 .video {
-	width: 60%; 
+	width: 65%; 
 	height: auto; 
-	margin-top: -10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .btnvideo {
 	font-size: 18px;
 }
+.interpilihanganda a{
+	width: auto;
+	font-size: 19px; 
+	border: rgb(249, 255, 249) 1.5px solid;
+	box-shadow: 0px 0px 2px 0px black;
+	border-radius: 6px 5px 5px 5px;
+	padding: 8px;  
+	cursor: pointer
+
+}
+
+
+.tablefoto {
+	width: 70%;
+	margin:auto;
+}
+
+
+.tablefoto img{
+	width: 200px;
+}
 
 @media screen and (max-width: 992px){
+	.Datakegiatan {
+		border-radius: 1px 9px ;
+		color: white; 
+		border: 2px solid rgb(41, 95, 65);
+		background-color: rgb(64, 125, 91);
+		font-weight: bold;
+		text-align: center;
+		margin-left:10px;
+		margin-bottom: 3px;
+		width: 80%;
+		font-family:'Bahnschrift' ;
+		padding: 6px;
+		margin-top: -10px;
+		font-size: 19px;
+	}
+
 	.footer{
         position: absolute;
         bottom: 0;
@@ -286,10 +926,100 @@
         margin-left: 2px;
         width: 99.8%;
         height: 11%;
-        font-family: 'Libre Franklin', sans-serif;
-        background-color: rgba(90, 90, 136, 0.993);
-        color: white;
+        font-family: 'Bahnschrift';
+        background-color: #1d6c9d;
+        color:#1d6c9d;
     }
+	.foto img{
+		width: 100%;
+		
+	}
+	.penggaris img{
+		width: 100%;
+		
+	}
+	.lumayan img{
+		width: 50px;
+		height: 50px;
+
+	}
+	.aqua img{
+		width: 100%;
+	}
+	.kulkas img{
+		width: auto;
+		height: 100%;
+	}
+	.basket img{
+		width: 100%;
+		height: auto;
+	}
+	.semua img{
+		width: 100%;
+		height: auto;
+	}
+	
+	.terapung img{
+		width: 100%;
+	}
+	.macam {
+
+		background: #ffeeaa;
+		border: none;
+		border-radius: 3px;
+		margin-bottom: 20px;
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+		margin-right: auto;
+		width: 350px;
+		font-size: 1px;
+	}
+	.judulrespons{
+		
+		font-size: 17px;
+	}
+	.subjudul {
+		width: auto; 
+		height: auto;
+		color: white; 
+		background:rgb(14, 111, 61);
+		font-family: Bahnschrift;
+		padding: 4px;
+	}
+	.subjudulsetengahpanjang {
+		margin-left: 3px;
+		width: auto; 
+		height: auto;
+		padding: 10px;
+		border-radius: 5px;
+		color: white; 
+		background:rgb(14, 111, 61);
+		font-family: 'Bahnschrift' ;
+		padding: 4px;
+	}
+	.subjudultanggung {
+	
+		margin-left: 3px;
+		width: auto; 
+		height: auto;
+		color: white; 
+		background:rgb(14, 111, 61);
+		padding: 8px;
+		border-radius: 10px;
+		display: inline-block;
+		font-family: 'Bahnschrift';
+	}
+	.subjudulpas {
+	
+		margin-left: 3px;
+		width: auto; 
+		height: auto;
+		color: white; 
+		background:rgb(14, 111, 61);
+		padding: 8px;
+		border-radius: 10px;
+		display: inline-block;
+		font-family: 'Bahnschrift';
+	}
 
     .footer p{
         font-size: 1.5vw;
@@ -303,16 +1033,23 @@
 		border: 3px dashed green;
 	}
 
-	.mengamati {
-		width: 55%; 
+
+	.subjudulpas {
+	
+		margin-left: 3px;
+		width: auto; 
+		height: auto;
 		color: white; 
-		border: 2px solid green; 
-		background: green;
-		padding: 4px;
+		background:rgb(14, 111, 61);
+		padding: 8px;
+		border-radius: 10px;
+		display: inline-block;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	}
 	
 	.data {
 		width: 100%;
+		
 	}
 
 	.kuis {
@@ -337,9 +1074,13 @@
 		font-size: 10pt;
 	}
 
+	.dragand table{
+		width: 100%;
+		height: auto;	
+	}
 	.kotakDrag {
 		width: 100%;
-		height: 200px;
+		height: 220px;
 		padding: 3px;
 		border: 1px solid #aaaaaa;
 		font-weight: bold;
@@ -347,11 +1088,23 @@
 	
 	.kotakDrag2 {
 		width: auto;
-		height: 200px;
+		height: 220px;
 		padding: 3px;
 		border: 1px solid #aaaaaa;
 		font-weight: bold;
 	  }
+	  .isikotakdrop {
+
+		background:   rgb(42, 179, 108);
+	   color: white;
+	   border-radius: 5px;
+	   padding: 0;
+	   margin-top: 10px;
+	   font-family: 'Bahnschrift'; 
+	   font-size: 17px;
+	   border:2px solid #08512e ;
+	   
+	   }
 
 	.subrangkum{
 		width: 60%;
@@ -364,6 +1117,13 @@
 	.headmateri2 {
 		font-size: 12pt;
 	}
+	.tablecek{
+	
+		width: 10%;
+		font-size: 10px;
+		margin-left: -80px;
+	}
+	
 
 	.video {
 		width: 75%; 
@@ -388,5 +1148,9 @@
 	.tablecek{
 		font-size: 10pt;
 		width: 50%;
+	}
+	.text-left a{
+		width: auto;
+
 	}
 }

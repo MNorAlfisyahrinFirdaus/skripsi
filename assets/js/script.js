@@ -1,413 +1,104 @@
-const locLast = window.location.pathname;
-localStorage.setItem('locLast', locLast);
-
-// localStorage.removeItem('nama');
-// localStorage.removeItem('kelas');
-
-// $('img').bind('contextmenu', function(e) {
-//     return false;
-// }); 
-
-
 var namaS = localStorage.getItem('nama');
 var kelasS = localStorage.getItem('kelas');
 
-const video = document.querySelector('.video');
-
-var video1_1 = document.getElementById("video1_1");
-
-window.onload = function awal(){
-   document.getElementById("info").hidden = false;
-   document.getElementById("dafus").hidden = true;
-   document.getElementById("petunjuk").hidden = true; 
-};
-
-function info(){
-   document.getElementById("info").hidden = false;
-   document.getElementById("dafus").hidden = true;
-   document.getElementById("petunjuk").hidden = true;
-   document.getElementById("btninfo").classList.add('btnaktif');
-   document.getElementById("btndafus").classList.remove('btnaktif');
-   document.getElementById("btnpetunjuk").classList.remove('btnaktif'); 
-}
-   
-function dafus(){
-   document.getElementById("info").hidden = true;
-   document.getElementById("dafus").hidden = false;
-   document.getElementById("petunjuk").hidden = true; 
-   document.getElementById("btninfo").classList.remove('btnaktif');
-   document.getElementById("btndafus").classList.add('btnaktif');
-   document.getElementById("btnpetunjuk").classList.remove('btnaktif');
-}
-   
-function petunjuk(){
-   document.getElementById("info").hidden = true;
-   document.getElementById("dafus").hidden = true;
-   document.getElementById("petunjuk").hidden = false; 
-   document.getElementById("btninfo").classList.remove('btnaktif');
-   document.getElementById("btndafus").classList.remove('btnaktif');
-   document.getElementById("btnpetunjuk").classList.add('btnaktif');
-}
-
 window.onload = function awalMateri(){
-   document.getElementById("satu").hidden = false;
-   document.getElementById("dua").hidden = true;
-   document.getElementById("tiga").hidden = true; 
-   document.getElementById("empat").hidden = true; 
-};
-
-function satu(){
-   document.getElementById("btnprev").classList.add('disabled'); 
-   document.getElementById("btnnext").classList.remove('disabled'); 
-   document.getElementById("satu").hidden = false;
-   document.getElementById("btnsatu").classList.add('btnaktif');
-   document.getElementById("dua").hidden = true;
-   document.getElementById("btndua").classList.remove('btnaktif');
-   document.getElementById("tiga").hidden = true;
-   document.getElementById("btntiga").classList.remove('btnaktif'); 
-   document.getElementById("empat").hidden = true;
-   document.getElementById("btnempat").classList.remove('btnaktif');
-   document.getElementById("next").setAttribute( "onClick", "javascript: dua();" );
-}
-
-function dua(){
-   document.getElementById("btnprev").classList.remove('disabled'); 
-   document.getElementById("btnnext").classList.remove('disabled'); 
-   document.getElementById("satu").hidden = true;
-   document.getElementById("btnsatu").classList.remove('btnaktif');
-   document.getElementById("dua").hidden = false;
-   document.getElementById("btndua").classList.add('btnaktif');
-   document.getElementById("tiga").hidden = true;
-   document.getElementById("btntiga").classList.remove('btnaktif'); 
-   document.getElementById("empat").hidden = true;
-   document.getElementById("btnempat").classList.remove('btnaktif');
-   document.getElementById("next").setAttribute( "onClick", "javascript: tiga();" );
-   document.getElementById("prev").setAttribute( "onClick", "javascript: satu();" );
-}
-
-function tiga(){
-   document.getElementById("btnprev").classList.remove('disabled'); 
-   document.getElementById("btnnext").classList.remove('disabled'); 
-   document.getElementById("satu").hidden = true;
-   document.getElementById("btnsatu").classList.remove('btnaktif');
-   document.getElementById("dua").hidden = true;
-   document.getElementById("btndua").classList.remove('btnaktif');
-   document.getElementById("tiga").hidden = false;
-   document.getElementById("btntiga").classList.add('btnaktif'); 
-   document.getElementById("empat").hidden = true;
-   document.getElementById("btnempat").classList.remove('btnaktif'); 
-   document.getElementById("next").setAttribute( "onClick", "javascript: empat();" );
-   document.getElementById("prev").setAttribute( "onClick", "javascript: dua();" );
-}
-
-function empat(){
-   document.getElementById("btnprev").classList.remove('disabled'); 
-   document.getElementById("satu").hidden = true;
-   document.getElementById("btnsatu").classList.remove('btnaktif');
-   document.getElementById("dua").hidden = true;
-   document.getElementById("btndua").classList.remove('btnaktif');
-   document.getElementById("tiga").hidden = true;
-   document.getElementById("btntiga").classList.remove('btnaktif'); 
-   document.getElementById("empat").hidden = false;
-   document.getElementById("btnempat").classList.add('btnaktif'); 
-   document.getElementById("btnnext").classList.add('disabled'); 
-   document.getElementById("prev").setAttribute( "onClick", "javascript: tiga();" );
-   document.getElementById("mnext").hidden = false;
-}
-
-window.onload = function awalMateri2(){
-   document.getElementById("satu").hidden = false;
-   document.getElementById("dua").hidden = true;
-};
-
-function satu2(){
-   document.getElementById("btnprev").classList.add('disabled'); 
-   document.getElementById("btnnext").classList.remove('disabled'); 
-   document.getElementById("satu").hidden = false;
-   document.getElementById("btnsatu").classList.add('btnaktif');
-   document.getElementById("dua").hidden = true;
-   document.getElementById("btndua").classList.remove('btnaktif');
-   document.getElementById("next").setAttribute( "onClick", "javascript: dua2();" );
-}
-
-function dua2(){
-   document.getElementById("btnprev").classList.remove('disabled'); 
-   document.getElementById("satu").hidden = true;
-   document.getElementById("btnsatu").classList.remove('btnaktif');
-   document.getElementById("dua").hidden = false;
-   document.getElementById("btndua").classList.add('btnaktif');
-   document.getElementById("btnnext").classList.add('disabled'); 
-   document.getElementById("prev").setAttribute( "onClick", "javascript: satu2();" );
-   document.getElementById("mnext").hidden = false;
-}
-
-window.onload = function awalMateri5(){
     document.getElementById("satu").hidden = false;
     document.getElementById("dua").hidden = true;
-    document.getElementById("tiga").hidden = true; 
-    document.getElementById("empat").hidden = true; 
-    document.getElementById("lima").hidden = true; 
+};
+//--tombol slide ----------------------------------------------
+function slide1(){
+    hal1.style.display="";
+    hal2.style.display="none";
+    hal3.style.display="none";
+
+
+    tombol1.style.background="#464646";
+    tombol2.style.background="rgb(20, 134, 75) ";
+    tombol3.style.background="rgb(20, 134, 75)";
+
+}
+function slide2(){
+  hal1.style.display="none";
+  hal2.style.display="";
+  hal3.style.display="none";
+
+    tombol1.style.background="rgb(20, 134, 75)";
+    tombol2.style.background="#464646";
+    tombol3.style.background="rgb(20, 134, 75) "; 
+
+
+}
+function slide3(){
+  hal1.style.display="none";
+  hal2.style.display="none";
+  hal3.style.display="";
+
+    tombol1.style.background="rgb(20, 134, 75)";
+    tombol2.style.background="rgb(20, 134, 75)";
+    tombol3.style.background="#464646";
+
+
+}
+//---Peta konsep , daftar putaka dll-----------------------------------------
+
+ 
+window.onload = function awal(){
+    document.getElementById("info").hidden = false;
+    document.getElementById("dafus").hidden = true;
+    document.getElementById("petunjuk").hidden = true; 
  };
  
- function satu5(){
-    document.getElementById("btnprev").classList.add('disabled'); 
-   document.getElementById("btnnext").classList.remove('disabled'); 
-   document.getElementById("satu").hidden = false;
-    document.getElementById("btnsatu").classList.add('btnaktif');
-    document.getElementById("dua").hidden = true;
-    document.getElementById("btndua").classList.remove('btnaktif');
-    document.getElementById("tiga").hidden = true;
-    document.getElementById("btntiga").classList.remove('btnaktif'); 
-    document.getElementById("empat").hidden = true;
-    document.getElementById("btnempat").classList.remove('btnaktif');
-    document.getElementById("lima").hidden = true;
-    document.getElementById("btnlima").classList.remove('btnaktif');
-    document.getElementById("next").setAttribute( "onClick", "javascript: dua5();" );
+ function info(){
+    document.getElementById("info").hidden = false;
+    document.getElementById("dafus").hidden = true;
+    document.getElementById("petunjuk").hidden = true;
+    document.getElementById("petakonsep").hidden = true; 
+    document.getElementById("btninfo").classList.add('active');
+    document.getElementById("btndafus").classList.remove('active');
+    document.getElementById("btnpetunjuk").classList.remove('active'); 
+    document.getElementById("btnpetakonsep").classList.remove('active');
  }
- 
- function dua5(){
-    document.getElementById("btnprev").classList.remove('disabled'); 
-   document.getElementById("btnnext").classList.remove('disabled'); 
-   document.getElementById("satu").hidden = true;
-    document.getElementById("btnsatu").classList.remove('btnaktif');
-    document.getElementById("dua").hidden = false;
-    document.getElementById("btndua").classList.add('btnaktif');
-    document.getElementById("tiga").hidden = true;
-    document.getElementById("btntiga").classList.remove('btnaktif'); 
-    document.getElementById("empat").hidden = true;
-    document.getElementById("btnempat").classList.remove('btnaktif');
-    document.getElementById("lima").hidden = true;
-    document.getElementById("btnlima").classList.remove('btnaktif');
-    document.getElementById("next").setAttribute( "onClick", "javascript: tiga5();" );
-    document.getElementById("prev").setAttribute( "onClick", "javascript: satu5();" );
+    
+ function dafus(){
+    document.getElementById("info").hidden = true;
+    document.getElementById("dafus").hidden = false;
+    document.getElementById("petunjuk").hidden = true; 
+    document.getElementById("petakonsep").hidden = true; 
+    document.getElementById("btninfo").classList.remove('active');
+    document.getElementById("btndafus").classList.add('active');
+    document.getElementById("btnpetunjuk").classList.remove('active');
+    document.getElementById("btnpetakonsep").classList.remove('active');
  }
- 
- function tiga5(){
-    document.getElementById("btnprev").classList.remove('disabled'); 
-    document.getElementById("btnnext").classList.remove('disabled'); 
-    document.getElementById("satu").hidden = true;
-    document.getElementById("btnsatu").classList.remove('btnaktif');
-    document.getElementById("dua").hidden = true;
-    document.getElementById("btndua").classList.remove('btnaktif');
-    document.getElementById("tiga").hidden = false;
-    document.getElementById("btntiga").classList.add('btnaktif'); 
-    document.getElementById("empat").hidden = true;
-    document.getElementById("btnempat").classList.remove('btnaktif');
-    document.getElementById("lima").hidden = true;
-    document.getElementById("btnlima").classList.remove('btnaktif'); 
-    document.getElementById("next").setAttribute( "onClick", "javascript: empat5();" );
-    document.getElementById("prev").setAttribute( "onClick", "javascript: dua5();" );
+    
+ function petunjuk(){
+    document.getElementById("info").hidden = true;
+    document.getElementById("dafus").hidden = true;
+    document.getElementById("petunjuk").hidden = false; 
+    document.getElementById("petakonsep").hidden = true; 
+    document.getElementById("btninfo").classList.remove('active');
+    document.getElementById("btndafus").classList.remove('active');
+    document.getElementById("btnpetunjuk").classList.add('active');
+    document.getElementById("btnpetakonsep").classList.remove('active');
  }
- 
- function empat5(){
-    document.getElementById("btnprev").classList.remove('disabled'); 
-    document.getElementById("btnnext").classList.remove('disabled'); 
-    document.getElementById("satu").hidden = true;
-    document.getElementById("btnsatu").classList.remove('btnaktif');
-    document.getElementById("dua").hidden = true;
-    document.getElementById("btndua").classList.remove('btnaktif');
-    document.getElementById("tiga").hidden = true;
-    document.getElementById("btntiga").classList.remove('btnaktif'); 
-    document.getElementById("empat").hidden = false;
-    document.getElementById("btnempat").classList.add('btnaktif');
-    document.getElementById("lima").hidden = true;
-    document.getElementById("btnlima").classList.remove('btnaktif');
-    document.getElementById("next").setAttribute( "onClick", "javascript: lima5();" );
-    document.getElementById("prev").setAttribute( "onClick", "javascript: tiga5();" );
-}
-
- function lima5(){
-    document.getElementById("btnprev").classList.remove('disabled'); 
-    document.getElementById("satu").hidden = true;
-    document.getElementById("btnsatu").classList.remove('btnaktif');
-    document.getElementById("dua").hidden = true;
-    document.getElementById("btndua").classList.remove('btnaktif');
-    document.getElementById("tiga").hidden = true;
-    document.getElementById("btntiga").classList.remove('btnaktif'); 
-    document.getElementById("empat").hidden = true;
-    document.getElementById("btnempat").classList.remove('btnaktif');
-    document.getElementById("lima").hidden = false;
-    document.getElementById("btnlima").classList.add('btnaktif'); 
-    document.getElementById("btnnext").classList.add('disabled'); 
-    document.getElementById("prev").setAttribute( "onClick", "javascript: empat5();" );
-    document.getElementById("mnext").hidden = false;
+ function petakonsep(){
+    document.getElementById("info").hidden = true;
+    document.getElementById("dafus").hidden = true;
+    document.getElementById("petunjuk").hidden = true; 
+    document.getElementById("petakonsep").hidden = false; 
+    document.getElementById("btninfo").classList.remove('active');
+    document.getElementById("btndafus").classList.remove('active');
+    document.getElementById("btnpetunjuk").classList.remove('active');
+    document.getElementById("btnpetakonsep").classList.add('active');
  }
-
-$(function () {
-    $('[data-toggle="popover"]').popover('show')
-  })
-
-function allowDrop(ev) {
-    ev.preventDefault();
-}
-  
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
-  
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-}
-
-let bbesi = document.getElementById('bbesi');
-let sbesi = document.getElementById('sbesi');
-
-let btembaga = document.getElementById('btembaga');
-let stembaga = document.getElementById('stembaga');
-
-let bkuningan = document.getElementById('bkuningan');
-let skuningan = document.getElementById('skuningan');
-
-let baluminium = document.getElementById('baluminium');
-let saluminium = document.getElementById('saluminium');
-
-let bplastik = document.getElementById('bplastik');
-let splastik = document.getElementById('splastik');
-
-let bkertas = document.getElementById('bkertas');
-let skertas = document.getElementById('skertas');
-
-let bkayu = document.getElementById('bkayu');
-let skayu = document.getElementById('skayu');
-
-
-const benar = '<span style="color : green;">Benar</span>'
-const salah = '<span style="color : red;">Salah</span>'
-
-function cekBBesi() {
-    sbesi.checked = false;
-    const cekBesi = document.querySelector('.cekBesi');
-    cekBesi.innerHTML = benar;
-}
-function cekSBesi() {
-    bbesi.checked = false;
-    const cekBesi = document.querySelector('.cekBesi');
-    cekBesi.innerHTML = salah;
-}
-
-function cekBTembaga() {
-    stembaga.checked = false;
-    const cekTembaga = document.querySelector('.cekTembaga');
-    cekTembaga.innerHTML = benar;
-}
-function cekSTembaga() {
-    btembaga.checked = false;
-    const cekTembaga = document.querySelector('.cekTembaga');
-    cekTembaga.innerHTML = salah;
-}
-
-function cekBKuningan() {
-    skuningan.checked = false;
-    const cekKuningan = document.querySelector('.cekKuningan');
-    cekKuningan.innerHTML = benar;
-}
-function cekSKuningan() {
-    bkuningan.checked = false;
-    const cekKuningan = document.querySelector('.cekKuningan');
-    cekKuningan.innerHTML = salah;
-}
-
-function cekBAluminium() {
-    saluminium.checked = false;
-    const cekAluminium = document.querySelector('.cekAluminium');
-    cekAluminium.innerHTML = benar;
-}
-function cekSAluminium() {
-    baluminium.checked = false;
-    const cekAluminium = document.querySelector('.cekAluminium');
-    cekAluminium.innerHTML = salah;
-}
-
-function cekBPlastik() {
-    splastik.checked = false;
-    const cekPlastik = document.querySelector('.cekPlastik');
-    cekPlastik.innerHTML = benar;
-}
-function cekSPlastik() {
-    bplastik.checked = false;
-    const cekPlastik = document.querySelector('.cekPlastik');
-    cekPlastik.innerHTML = salah;
-}
-
-function cekBKertas() {
-    skertas.checked = false;
-    const cekKertas = document.querySelector('.cekKertas');
-    cekKertas.innerHTML = benar;
-}
-function cekSKertas() {
-    bkertas.checked = false;
-    const cekKertas = document.querySelector('.cekKertas');
-    cekKertas.innerHTML = salah;
-}
-
-function cekBKayu() {
-    skayu.checked = false;
-    const cekKayu = document.querySelector('.cekKayu');
-    cekKayu.innerHTML = benar;
-}
-function cekSKayu() {
-    bkayu.checked = false;
-    const cekKayu = document.querySelector('.cekKayu');
-    cekKayu.innerHTML = salah;
-}
-
-function cekYa(){
-    const jawabcs1 = document.getElementById('jawabcs1');
-    jawabcs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                        Jawaban Anda ${salah}<br>
-                        <div class="pembahasan2">
-                        <u>Pembahasan :</u>
-                        </div>
-                        Silahkan pilih jawaban yang benar
-                        </div>`;
-}
-
-function cekTidak(){
-    const jawabcs1 = document.getElementById('jawabcs1');
-    jawabcs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                        Jawaban Anda ${benar}<br>
-                        <div class="pembahasan2">
-                        <u>Pembahasan :</u>
-                        </div>
-                        Tidak semua bahan dapat ditarik oleh Magnet
-                        </div>`;
-}
-
-let tarik = document.getElementById('tarik');
-let tolak = document.getElementById('tolak');
-
-function cekKel(){
-    if ((tarik.innerText == 'Besi')&&(tolak.childNodes.length == 6)) {
-        const jawabKel = document.getElementById('jawabKel');
-        jawabKel.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${benar}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Hasil percobaan tersebut kita dapat mengetahui bahwa : <br>Bahan magnetik diantaranya Besi, dan <br>Bahan nonmagnetik diantaranya Tembaga, Kuningan, Aluminium, Plastik, Kertas dan Kayu
-                            </div>`;  
-    } else {
-        const jawabKel = document.getElementById('jawabKel');
-        jawabKel.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${salah}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Silahkan coba kelompokkan lagi bahan yang dapat ditarik dan tidak dapat ditarik magnet
-                            </div>`; 
-    }
-}
-
-function cek1_3cs1B() {
+ //---------------------------------------------------
+ function cek1_3cs1B() {
     const jawab1_3cs1 = document.getElementById('jawab1_3cs1');
     jawab1_3cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
                             Jawaban Anda ${benar}<br>
                             <div class="pembahasan2">
                             <u>Pembahasan :</u>
                             </div>
-                            Karena kutub magnet sejenis akan tolak menolak jika didekatkan
+                            Karena muatan listrik yang sejenis akan saling tolak-menolak
                             </div>`;
 }
 
@@ -429,7 +120,7 @@ function cek1_3cs2B() {
                             <div class="pembahasan2">
                             <u>Pembahasan :</u>
                             </div>
-                            Karena kutub magnet tidak sejenis akan tarik menarik jika didekatkan
+                            Muatan listrik yang sejenis akan saling tolak-menolak
                             </div>`;
 }
 
@@ -444,110 +135,21 @@ function cek1_3cs2S() {
                             </div>`;
 }
 
-function kesim1_3(){
-    const kesim1_3 = document.getElementById('kesim1_3').value;    
-    kesimpulan1_3.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            <div class="pembahasan2">
-                            <u>Kesimpulan :</u>
-                            </div>
-                            ${kesim1_3}
-                            </div>`;
-}
 
-function kesim1_4(){
-    const kesim1_4 = document.getElementById('kesim1_4').value;    
-    kesimpulan1_4.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            <div class="pembahasan2">
-                            <u>Kesimpulan :</u>
-                            </div>
-                            ${kesim1_4}
-                            </div>`;
-}
-
-function kesim2_1(){
-    const kesim2_1 = document.getElementById('kesim2_1').value;    
-    kesimpulan2_1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            <div class="pembahasan2">
-                            <u>Kesimpulan :</u>
-                            </div>
-                            ${kesim2_1}
-                            </div>`;
-}
-
-function kesim2_2(){
-    const kesim2_2 = document.getElementById('kesim2_2').value;    
-    kesimpulan2_2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            <div class="pembahasan2">
-                            <u>Kesimpulan :</u>
-                            </div>
-                            ${kesim2_2}
-                            </div>`;
-}
-
-function kesim2_3(){
-    const kesim2_3 = document.getElementById('kesim2_3').value;    
-    kesimpulan2_3.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            <div class="pembahasan2">
-                            <u>Kesimpulan :</u>
-                            </div>
-                            ${kesim2_3}
-                            </div>`;
-}
-
-function kesim3_1(){
-    const kesim3_1 = document.getElementById('kesim3_1').value;    
-    kesimpulan3_1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            <div class="pembahasan2">
-                            <u>Kesimpulan :</u>
-                            </div>
-                            ${kesim3_1}
-                            </div>`;
-}
-
-function kesim4_1(){
-    const kesim4_1 = document.getElementById('kesim4_1').value;    
-    kesimpulan4_1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            <div class="pembahasan2">
-                            <u>Kesimpulan :</u>
-                            </div>
-                            ${kesim4_1}
-                            </div>`;
-}
-
-function kesim4_2(){
-    const kesim4_2 = document.getElementById('kesim4_2').value;    
-    kesimpulan4_2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            <div class="pembahasan2">
-                            <u>Kesimpulan :</u>
-                            </div>
-                            ${kesim4_2}
-                            </div>`;
-}
-
-function kesim4_3(){
-    const kesim4_3 = document.getElementById('kesim4_3').value;    
-    kesimpulan4_3.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            <div class="pembahasan2">
-                            <u>Kesimpulan :</u>
-                            </div>
-                            ${kesim4_3}
-                            </div>`;
-}
-
-function cek1_4cs1B() {
-    const jawab1_4cs1 = document.getElementById('jawab1_4cs1');
-    jawab1_4cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+function cek1_3cs3B() {
+    const jawab1_3cs2 = document.getElementById('jawab1_3cs3');
+    jawab1_3cs2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
                             Jawaban Anda ${benar}<br>
                             <div class="pembahasan2">
                             <u>Pembahasan :</u>
                             </div>
-                            Karena serbuk besi membentuk pola garis gaya magnet
+                            muatan listrik yang tidak sejenis akan saling tarik-menarik ketika didekatkan
                             </div>`;
 }
 
-function cek1_4cs1S() {
-    const jawab1_4cs1 = document.getElementById('jawab1_4cs1');
-    jawab1_4cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+function cek1_3cs3S() {
+    const jawab1_3cs2 = document.getElementById('jawab1_3cs3');
+    jawab1_3cs2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
                             Jawaban Anda ${salah}<br>
                             <div class="pembahasan2">
                             <u>Pembahasan :</u>
@@ -556,310 +158,509 @@ function cek1_4cs1S() {
                             </div>`;
 }
 
-function cek2_1cs1B() {
-    const jawab2_1cs1 = document.getElementById('jawab2_1cs1');
-    jawab2_1cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+function cekYa(){
+    const jawabcs1 = document.getElementById('jawabcs1');
+    jawabcs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+                     ${salah}<br>
+                        <div class="pembahasan2">
+                      
+                        </div>
+                        Silahkan pilih lagi jawaban yang benar
+                        </div>`;
+}
+
+function cekTidak(){
+    const jawabcs1 = document.getElementById('jawabcs1');
+    jawabcs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+                         ${benar}<br>
+                        <div class="pembahasan2">
+                        
+                        </div>
+                        Tidak semua bahan dapat ditarik oleh magnet
+                        </div>`;
+}
+$(function () {
+    $('[data-toggle="popover"]').popover('show')
+  })
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+  
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+  
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+
+function cekKel(){
+    if ((tarik.innerText == 'Besi')&&(tolak.childNodes.length == 5)) {
+        const jawabKel = document.getElementById('jawabKel');
+        jawabKel.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+                            ${benar}<br>
+                            <div class="pembahasan2">
+                          
+                            </div>
+                            Hasil percobaan tersebut kita dapat mengetahui bahwa : <br>Benda-benda yang dapat ditarik oleh 
+                            magnet disebut benda magnetis. Contoh benda-benda magnetis antara lain besi, jarum, peniti, klip kertas, paku, gunting, dan lain-lain. Sedangkan benda yang tidak ditarik oleh magnet disebut benda nonmagnetis. Contoh benda-benda nonmagnetis, 
+                            antara lain batu kerekil, pensil ,penghapus,kelereng, kertas dan lain-lain
+                            </div>`;  
+    } else {
+        const jawabKel = document.getElementById('jawabKel');
+        jawabKel.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+                             ${salah}<br>
+                            <div class="pembahasan2">
+                            
+                            </div>
+                            Silahkan coba kelompokkan lagi bahan yang dapat ditarik dan tidak dapat ditarik magnet
+                            </div>`; 
+    }
+}
+
+
+//INTREKTIF KUIS PILIHAN GANDA SETELAH MENONTON VIDEO
+ 
+const benar = '<span style="color : green;"> Jawaban Anda Benar</span>'
+const salah = '<span style="color : red;">Jawaban Anda Salah</span>'
+
+//Soal Ganda Interaktif Gaya Otot
+var jwblat1_1 = '';
+function cekjwbotot1(pilih){
+    jwblat1_1 = pilih;
+}
+
+const lat1_1A = document.getElementById('jlat1_1A');
+const lat1_1B = document.getElementById('jlat1_1B');
+const lat1_1C = document.getElementById('jlat1_1C');
+const lat1_1D = document.getElementById('jlat1_1D');
+const lat1_1 = document.getElementById('lat1_1');
+
+function ceklat1_1(jwb){
+    lat1_1A.disabled = true;
+    lat1_1B.disabled = true;
+    lat1_1C.disabled = true;
+    lat1_1D.disabled = true;
+    if (jwblat1_1 === jwb){
+        lat1_1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+                             ${benar}<br>
+                            <div class="pembahasan2">
+                            
+                            </div>
+                            Peristiwa yang berhubungan gaya otot Isti mendorong meja, 
+                            karena mendorong meja di lakukan dengan otot-otot kita. 
+                            </div>`;
+    } else {
+        lat1_1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+                             ${salah}<br>
+                            <div class="pembahasan2">
+                            
+                            </div>
+                            Silahkan pilih jawaban yang benar
+                            </div>`;
+    }
+}
+
+function repeat1_1(){
+    lat1_1A.disabled = false;
+    lat1_1B.disabled = false;
+    lat1_1C.disabled = false;
+    lat1_1D.disabled = false;
+    lat1_1A.checked = false;
+    lat1_1B.checked = false;
+    lat1_1C.checked = false;
+    lat1_1D.checked = false;
+    lat1_1.innerHTML = "";
+}
+
+var jwblat1_2 = '';
+function cekjwb1_2(pilih){
+    jwblat1_2 = pilih;
+}
+
+const lat1_2A = document.getElementById('jlat1_2A');
+const lat1_2B = document.getElementById('jlat1_2B');
+const lat1_2C = document.getElementById('jlat1_2C');
+const lat1_2D = document.getElementById('jlat1_2D');
+const lat1_2 = document.getElementById('lat1_2');
+
+function ceklat1_2(jwb){
+    lat1_2A.disabled = true;
+    lat1_2B.disabled = true;
+    lat1_2C.disabled = true;
+    lat1_2D.disabled = true;
+    if (jwblat1_2 === jwb){
+        lat1_2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+                             ${benar}<br>
+                            <div class="pembahasan2">
+                            
+                            </div>
+                            Benda yang dimasukkan ke dalam air akan mendapat gaya ke atas oleh air. 
+                            Benda tenggelam di dalam zat cair jika gaya berat benda lebih besar dari 
+                            pada gaya ke atas oleh zat cair. Seperti kelereng, besi, peniti, Paku, kerikil. 
+                            Sedangkan benda seperti gabus dan bola plastik mengapung karena gaya berat benda lebih kecil dari gaya angkat air. 
+                            </div>`;
+    } else {
+        lat1_2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+                             ${salah}<br>
+                            <div class="pembahasan2">
+                            
+                            </div>
+                            Silahkan pilih jawaban yang benar
+                            </div>`;
+    }
+}
+
+function repeat1_2(){
+    lat1_2A.disabled = false;
+    lat1_2B.disabled = false;
+    lat1_2C.disabled = false;
+    lat1_2D.disabled = false;
+    lat1_2A.checked = false;
+    lat1_2B.checked = false;
+    lat1_2C.checked = false;
+    lat1_2D.checked = false;
+    lat1_2.innerHTML = "";
+}
+
+var jwblat2_1 = '';
+function cekjwb2_1(pilih){
+    jwblat2_1 = pilih;
+}
+
+const lat2_1A = document.getElementById('jlat2_1A');
+const lat2_1B = document.getElementById('jlat2_1B');
+const lat2_1C = document.getElementById('jlat2_1C');
+const lat2_1D = document.getElementById('jlat2_1D');
+const lat2_1 = document.getElementById('lat2_1');
+
+function ceklat2_1(jwb){
+    lat2_1A.disabled = true;
+    lat2_1B.disabled = true;
+    lat2_1C.disabled = true;
+    lat2_1D.disabled = true;
+    if (jwblat2_1 === jwb){
+        lat2_1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
                             Jawaban Anda ${benar}<br>
                             <div class="pembahasan2">
                             <u>Pembahasan :</u>
                             </div>
-                            Karena paku besi tidak dapat menarik jepitan kertas sebelum magnet digosokkan terhadap paku besi
+                            Karena jenis-jenis zat yaitu padat, gas dan cair
                             </div>`;
-}
-
-function cek2_1cs1S() {
-    const jawab2_1cs1 = document.getElementById('jawab2_1cs1');
-    jawab2_1cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+    } else {
+        lat2_1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
                             Jawaban Anda ${salah}<br>
                             <div class="pembahasan2">
                             <u>Pembahasan :</u>
                             </div>
                             Silahkan pilih jawaban yang benar
                             </div>`;
+    }
 }
 
-function cek2_1cs2B() {
-    const jawab2_1cs2 = document.getElementById('jawab2_1cs2');
-    jawab2_1cs2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+function repeat2_1(){
+    lat2_1A.disabled = false;
+    lat2_1B.disabled = false;
+    lat2_1C.disabled = false;
+    lat2_1D.disabled = false;
+    lat2_1A.checked = false;
+    lat2_1B.checked = false;
+    lat2_1C.checked = false;
+    lat2_1D.checked = false;
+    lat2_1.innerHTML = "";
+}
+
+var jwblat2_2 = '';
+function cekjwb2_2(pilih){
+    jwblat2_2 = pilih;
+}
+
+const lat2_2A = document.getElementById('jlat2_2A');
+const lat2_2B = document.getElementById('jlat2_2B');
+const lat2_2C = document.getElementById('jlat2_2C');
+const lat2_2D = document.getElementById('jlat2_2D');
+const lat2_2 = document.getElementById('lat2_2');
+
+function ceklat2_2(jwb){
+    lat2_2A.disabled = true;
+    lat2_2B.disabled = true;
+    lat2_2C.disabled = true;
+    lat2_2D.disabled = true;
+    if (jwblat2_2 === jwb){
+        lat2_2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
                             Jawaban Anda ${benar}<br>
                             <div class="pembahasan2">
                             <u>Pembahasan :</u>
                             </div>
-                            Karena paku besi dapat menarik jepitan kertas setelah magnet digosokkan terhadap paku besi
+                            Karena aluminium dan minyak merupakan zat cair
                             </div>`;
-}
-
-function cek2_1cs2S() {
-    const jawab2_1cs2 = document.getElementById('jawab2_1cs2');
-    jawab2_1cs2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+    } else {
+        lat2_2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
                             Jawaban Anda ${salah}<br>
                             <div class="pembahasan2">
                             <u>Pembahasan :</u>
                             </div>
                             Silahkan pilih jawaban yang benar
                             </div>`;
+    }
 }
 
-function cek2_2cs1B() {
-    const jawab2_2cs1 = document.getElementById('jawab2_2cs1');
-    jawab2_2cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+function repeat2_2(){
+    lat2_2A.disabled = false;
+    lat2_2B.disabled = false;
+    lat2_2C.disabled = false;
+    lat2_2D.disabled = false;
+    lat2_2A.checked = false;
+    lat2_2B.checked = false;
+    lat2_2C.checked = false;
+    lat2_2D.checked = false;
+    lat2_2.innerHTML = "";
+}
+
+var jwblat3_1 = '';
+function cekjwb3_1(pilih){
+    jwblat3_1 = pilih;
+}
+
+const lat3_1A = document.getElementById('jlat3_1A');
+const lat3_1B = document.getElementById('jlat3_1B');
+const lat3_1C = document.getElementById('jlat3_1C');
+const lat3_1D = document.getElementById('jlat3_1D');
+const lat3_1 = document.getElementById('lat3_1');
+
+function ceklat3_1(jwb){
+    lat3_1A.disabled = true;
+    lat3_1B.disabled = true;
+    lat3_1C.disabled = true;
+    lat3_1D.disabled = true;
+    if (jwblat3_1 === jwb){
+        lat3_1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
                             Jawaban Anda ${benar}<br>
                             <div class="pembahasan2">
                             <u>Pembahasan :</u>
                             </div>
-                            Karena paku besi tidak dapat menarik jepitan kertas sebelum paku besi ditempelkan(induksi) terhadap magnet
+                            Karena Gaya gravitasi, disebut juga gaya tarik adalah kekuatan bumi untuk menarik benda ke bawah. 
                             </div>`;
-}
-
-function cek2_2cs1S() {
-    const jawab2_2cs1 = document.getElementById('jawab2_2cs1');
-    jawab2_2cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+    } else {
+        lat3_1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
                             Jawaban Anda ${salah}<br>
                             <div class="pembahasan2">
                             <u>Pembahasan :</u>
                             </div>
                             Silahkan pilih jawaban yang benar
                             </div>`;
+    }
 }
 
-function cek2_2cs2B() {
-    const jawab2_2cs2 = document.getElementById('jawab2_2cs2');
-    jawab2_2cs2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+function repeat3_1(){
+    lat3_1A.disabled = false;
+    lat3_1B.disabled = false;
+    lat3_1C.disabled = false;
+    lat3_1D.disabled = false;
+    lat3_1A.checked = false;
+    lat3_1B.checked = false;
+    lat3_1C.checked = false;
+    lat3_1D.checked = false;
+    lat3_1.innerHTML = "";
+}
+
+var jwblat3_2 = '';
+function cekjwb3_2(pilih){
+    jwblat3_2 = pilih;
+}
+
+const lat3_2A = document.getElementById('jlat3_2A');
+const lat3_2B = document.getElementById('jlat3_2B');
+const lat3_2C = document.getElementById('jlat3_2C');
+const lat3_2D = document.getElementById('jlat3_2D');
+const lat3_2 = document.getElementById('lat3_2');
+
+function ceklat3_2(jwb){
+    lat3_2A.disabled = true;
+    lat3_2B.disabled = true;
+    lat3_2C.disabled = true;
+    lat3_2D.disabled = true;
+    if (jwblat3_2 === jwb){
+        lat3_2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
                             Jawaban Anda ${benar}<br>
                             <div class="pembahasan2">
                             <u>Pembahasan :</u>
                             </div>
-                            Karena paku besi dapat menarik jepitan kertas setelah paku besi ditempelkan(induksi) terhadap magnet
+                            Karena Gaya gravitasi, disebut juga gaya tarik adalah kekuatan bumi untuk menarik benda ke bawah. 
                             </div>`;
-}
-
-function cek2_2cs2S() {
-    const jawab2_2cs2 = document.getElementById('jawab2_2cs2');
-    jawab2_2cs2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+    } else {
+        lat3_2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
                             Jawaban Anda ${salah}<br>
                             <div class="pembahasan2">
                             <u>Pembahasan :</u>
                             </div>
                             Silahkan pilih jawaban yang benar
                             </div>`;
+    }
 }
 
-function cek2_3cs1B() {
-    const jawab2_3cs1 = document.getElementById('jawab2_3cs1');
-    jawab2_3cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${benar}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Karena paku besi tidak dapat menarik jepitan kertas sebelum paku besi dialirkan listrik
-                            </div>`;
+function repeat3_2(){
+    lat3_2A.disabled = false;
+    lat3_2B.disabled = false;
+    lat3_2C.disabled = false;
+    lat3_2D.disabled = false;
+    lat3_2A.checked = false;
+    lat3_2B.checked = false;
+    lat3_2C.checked = false;
+    lat3_2D.checked = false;
+    lat3_2.innerHTML = "";
 }
 
-function cek2_3cs1S() {
-    const jawab2_3cs1 = document.getElementById('jawab2_3cs1');
-    jawab2_3cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${salah}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Silahkan pilih jawaban yang benar
-                            </div>`;
+
+
+
+
+
+
+
+$(function () {
+    $('[data-toggle="popover"]').popover('show')
+  })
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+  
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+  
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
 }
 
-function cek2_3cs2B() {
-    const jawab2_3cs2 = document.getElementById('jawab2_3cs2');
-    jawab2_3cs2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${benar}<br>
+function cekdrop(){
+    if ((tarik.innerText == 'Penghapus')&&(tolak.childNodes.length == 6)) {
+        const jawabdrop = document.getElementById('jawabdrop');
+        jawabdrop.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+                            ${benar}<br>
                             <div class="pembahasan2">
-                            <u>Pembahasan :</u>
+                          
                             </div>
-                            Karena paku besi dapat menarik jepitan kertas setelah paku besi dialirkan listrik
-                            </div>`;
+                            Hasil percobaan tersebut kita dapat mengetahui bahwa : <br>Bahan magnetik diantaranya Besi, dan <br>Bahan nonmagnetik diantaranya Tembaga, Kuningan, Aluminium, Plastik, Kertas dan Kayu
+                            </div>`;  
+    } else {
+        const jawabdrop = document.getElementById('jawabdrop');
+        jawabdrop.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
+                             ${salah}<br>
+                            <div class="pembahasan2">
+                            
+                            </div>
+                            Silahkan coba kelompokkan lagi bahan yang dapat ditarik dan tidak dapat ditarik magnet
+                            </div>`; 
+    }
+}
+//-----------cektable-------
+let bbesi = document.getElementById('bbesi');
+let sbesi = document.getElementById('sbesi');
+
+let bkelereng = document.getElementById('bkelereng');
+let skelereng = document.getElementById('skelereng');
+
+let bpeniti = document.getElementById('bpeniti');
+let speniti = document.getElementById('speniti');
+
+let bpaku = document.getElementById('bpaku');
+let spaku = document.getElementById('spaku');
+
+let bgabus = document.getElementById('bgabus');
+let sgabus = document.getElementById('sgabus');
+
+let bkerikil = document.getElementById('bkerikil');
+let skerikil = document.getElementById('skerikil');
+
+let bbola = document.getElementById('bbola');
+let sbola = document.getElementById('sbola');
+
+
+const bujur = '<span style="color : green;">Benar</span>'
+const kadabujur = '<span style="color : red;">Salah</span>'
+
+function cekBBesi() {
+    sbesi.checked = false;
+    const cekBesi = document.querySelector('.cekBesi');
+    cekBesi.innerHTML = bujur;
+}
+function cekSBesi() {
+    bbesi.checked = false;
+    const cekBesi = document.querySelector('.cekBesi');
+    cekBesi.innerHTML = kadabujur;
 }
 
-function cek2_3cs2S() {
-    const jawab2_3cs2 = document.getElementById('jawab2_3cs2');
-    jawab2_3cs2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${salah}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Silahkan pilih jawaban yang benar
-                            </div>`;
+function cekBKelereng() {
+    skelereng.checked = false;
+    const cekKelereng = document.querySelector('.cekKelereng');
+    cekKelereng.innerHTML = bujur;
+}
+function cekSKelereng() {
+    bkelereng.checked = false;
+    const cekKelereng = document.querySelector('.cekKelereng');
+    cekKelereng.innerHTML = kadabujur;
 }
 
-function cek3_1cs1B() {
-    const jawab3_1cs1 = document.getElementById('jawab3_1cs1');
-    jawab3_1cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${benar}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Karena semua kutub selatan jarum kompas mengarah ke kutub utara bumi
-                            </div>`;
+function cekBPeniti() {
+    speniti.checked = false;
+    const cekPeniti = document.querySelector('.cekPeniti');
+    cekPeniti.innerHTML = bujur;
+}
+function cekSPeniti() {
+    bpeniti.checked = false;
+    const cekPeniti = document.querySelector('.cekPeniti');
+    cekPeniti.innerHTML = kadabujur;
 }
 
-function cek3_1cs1S() {
-    const jawab3_1cs1 = document.getElementById('jawab3_1cs1');
-    jawab3_1cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${salah}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Silahkan pilih jawaban yang benar
-                            </div>`;
+function cekBPaku() {
+    spaku.checked = false;
+    const cekPaku = document.querySelector('.cekPaku');
+    cekPaku.innerHTML = bujur;
+}
+function cekSPaku() {
+    bpaku.checked = false;
+    const cekPaku = document.querySelector('.cekPaku');
+    cekPaku.innerHTML = kadabujur;
 }
 
-function cek3_1cs2B() {
-    const jawab3_1cs2 = document.getElementById('jawab3_1cs2');
-    jawab3_1cs2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${benar}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Karena semua jarum kompas mengarah ke magnet batang
-                            </div>`;
+function cekBGabus() {
+    sgabus.checked = false;
+    const cekGabus = document.querySelector('.cekGabus');
+    cekGabus.innerHTML = bujur;
+}
+function cekSGabus() {
+    bgabus.checked = false;
+    const cekGabus = document.querySelector('.cekGabus');
+    cekGabus.innerHTML = kadabujur;
 }
 
-function cek3_1cs2S() {
-    const jawab3_1cs2 = document.getElementById('jawab3_1cs2');
-    jawab3_1cs2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${salah}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Silahkan pilih jawaban yang benar
-                            </div>`;
+function cekBKerikil() {
+    skerikil.checked = false;
+    const cekKerikil = document.querySelector('.cekKerikil');
+    cekKerikil.innerHTML = bujur;
+}
+function cekSKerikil() {
+    bkerikil.checked = false;
+    const cekKerikil = document.querySelector('.cekKerikil');
+    cekKerikil.innerHTML = kadabujur;
 }
 
-function cek3_1cs3B() {
-    const jawab3_1cs3 = document.getElementById('jawab3_1cs3');
-    jawab3_1cs3.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${benar}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Karena semua kutub selatan jarum kompas mengarah ke kutub utara bumi
-                            </div>`;
+function cekBBola() {
+    sbola.checked = false;
+    const cekBola = document.querySelector('.cekBola');
+    cekBola.innerHTML = bujur;
+}
+function cekSBola() {
+    bbola.checked = false;
+    const cekBola = document.querySelector('.cekBola');
+    cekBola.innerHTML = kadabujur;
 }
 
-function cek3_1cs3S() {
-    const jawab3_1cs3 = document.getElementById('jawab3_1cs3');
-    jawab3_1cs3.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${salah}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Silahkan pilih jawaban yang benar
-                            </div>`;
-}
 
-function cek4_1cs1B() {
-    const jawab4_1cs1 = document.getElementById('jawab4_1cs1');
-    jawab4_1cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${benar}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Karena jarum kompas akan menyimpang dari kawat penghantar yang dialirkan arus listrik
-                            </div>`;
-}
-
-function cek4_1cs1S() {
-    const jawab4_1cs1 = document.getElementById('jawab4_1cs1');
-    jawab4_1cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${salah}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Silahkan pilih jawaban yang benar
-                            </div>`;
-}
-
-function cek4_2cs1B() {
-    const jawab4_2cs1 = document.getElementById('jawab4_2cs1');
-    jawab4_2cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${benar}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Karena jarum kompas akan menyimpang ketika didekatkan kumparan yang dialiri arus listrik 
-                            </div>`;
-}
-
-function cek4_2cs1S() {
-    const jawab4_2cs1 = document.getElementById('jawab4_2cs1');
-    jawab4_2cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${salah}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Silahkan pilih jawaban yang benar
-                            </div>`;
-}
-
-function cek4_2cs2B() {
-    const jawab4_2cs2 = document.getElementById('jawab4_2cs2');
-    jawab4_2cs2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${benar}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Karena jarum kompas tidak bergerak ketika didekatkan kumparan besi yang dialiri arus listrik
-                            </div>`;
-}
-
-function cek4_2cs2S() {
-    const jawab4_2cs2 = document.getElementById('jawab4_2cs2');
-    jawab4_2cs2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${salah}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Silahkan pilih jawaban yang benar
-                            </div>`;
-}
-
-function cek4_3cs1B() {
-    const jawab4_3cs1 = document.getElementById('jawab4_3cs1');
-    jawab4_3cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${benar}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Karena aluminium foil yang berada di antara magnet U akan melengkung ketika dialiri arus listrik
-                            </div>`;
-}
-
-function cek4_3cs1S() {
-    const jawab4_3cs1 = document.getElementById('jawab4_3cs1');
-    jawab4_3cs1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${salah}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Silahkan pilih jawaban yang benar
-                            </div>`;
-}
-
-function cek4_3cs2B() {
-    const jawab4_3cs2 = document.getElementById('jawab4_3cs2');
-    jawab4_3cs2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${benar}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Karena aluminium foil melengkung ke atas atau ke bawah tergantung polaritas arus listrik yang dialiri
-                            </div>`;
-}
-
-function cek4_3cs2S() {
-    const jawab4_3cs2 = document.getElementById('jawab4_3cs2');
-    jawab4_3cs2.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
-                            Jawaban Anda ${salah}<br>
-                            <div class="pembahasan2">
-                            <u>Pembahasan :</u>
-                            </div>
-                            Silahkan pilih jawaban yang benar
-                            </div>`;
-}

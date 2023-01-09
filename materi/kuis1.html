@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Zat | Ilmu Pengetahuan Alam</title>
+    <title> KUIS</title>
 
     <!-- Custom fonts for this template-->
     <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -18,399 +19,394 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="../assets/css/sb-admin-2.min.css" rel="stylesheet">
+
+
     <link href="../assets/css/style.css" rel="stylesheet">
+
+    
+    <link href="../assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/csslat/isilatihan2.css">
+    <link rel="stylesheet" type="text/css" href="/csslat/latihan2.css">
+    <link rel="stylesheet" href="../../fontawesome/css/all.css">
 
 </head>
 
-<body onload="aktif();" id="page-top">
+<body id="page-top" style=" font-family: 'Bahnschrift';">
+    <!-- Header -->
+     <!-- Header -->
+  <!-- Header -->
+  <div class="headermateri">
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="pt-2 pl-2 pb-1">
+        <button class="fas fa-bars fa-2x border-0 float-left text-white" style="width: auto; 	background-image: linear-gradient(rgb(26, 117, 70) , #08512e); " id="sidebarToggle"></button>
+          <h2><strong>&nbsp;</strong></h2>
+    </div>
+</div>
 
-    <!-- Page Wrapper -->
-    <div id="wrapper">
-
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-
-            <!-- Main Content -->
-            <div id="content">
-
-                <!-- Topbar -->
-                <nav class="navbar navbar-dark bg-success topbar mb-4 static-top shadow">
-
-                    <!-- Page Heading -->
-                    <div class="text-center" style="width: 100%;">
-                        <a class="float-right menu2" style="cursor: pointer;" data-toggle="modal" data-target="#ModalHome"><img src="../assets/img/home2.png" alt=""></a>
-                        <h1 class="h3 mt-2 text-white">Zat : Kuis 1</h1>
-                    </div>
-
-                </nav>
-                <!-- End of Topbar -->
-
-                <!-- Begin Page Content -->
-                <div class="container">
-
-                    <!-- Content Row -->
-                    <div id="dataKuis1">
-                        <div class="row" style="height: 500px; width: 100%;">
-                            <div class="mb-1 col-sm-6 bg-white border border-success isicontent">
-                              <div class="h5 font-weight-bold">
-                                <div class="ml-3 mb-3 mr-3">
-                                    <a style="cursor: pointer;">
-                                          <div class="text-truncate petunjuk2 rounded p-2" style="font-weight: normal; border: 3px solid green;">
-                                            <img src="../assets/img/search.png" alt="" width="10%">
-                                            Petunjuk
-                                            <!-- <span id="petunjuk">
-                                            </span> -->
-                                          </div>
-                                      </a>
-                                      <div class="collapse show" id="collapseExample">
-                                        <div class="card card-body" style="font-weight: normal; border: 2px dashed green;">
-                                            <ol>
-                                                <li>
-                                                    Kuis ini terdiri dari 5 soal berupa pilihan ganda.
-                                                </li>
-                                                <li>
-                                                    Setiap soal memiliki bobot poin sebanyak 20 poin.
-                                                </li>
-                                                <li>
-                                                    Silahkan lengkapi data diri Anda pada form yang telah disediakan.
-                                                </li>
-                                                <li>
-                                                    Tekan "Mulai Kuis" jika Anda sudah melengkapi data diri.
-                                                </li>
-                                                <li>
-                                                    Tekan salah satu pilihan jawaban yang dianggap benar.
-                                                </li>
-                                                <li>
-                                                    Setelah semua pertanyaan selesai dijawab, tekan tombol "Selesai" dan laman hasil akan muncul.
-                                                </li>
-                                            </ol>
-                                        </div>
-                                      </div>
-                                </div>  
-                              </div>
-                            </div>
-                            <div class="mb-1 col-sm-6 bg-white border border-success isicontent">
-                                <div class="h5 font-weight-bold">
-                                    <div class="soal" style="font-weight: normal;">
-                                        <div class="text-truncate petunjuk rounded p-2" style="font-weight: normal; border: 3px solid green;">
-                                            Data Diri
-                                          </div>
-                                        <div class="mt-3">
-                                            <center>
-                                                <div class="data p-3" style="border: 3px solid green;">
-                                                  <div class="form">
-                                                      <table style="table-layout: fixed;">
-                                                          <tr>
-                                                              <td>Nama</td>
-                                                              <td>:</td>
-                                                              <td><input type="text" id="nama" name="nama" style="width: 100%;" placeholder="Masukkan Nama Anda"></td>
-                                                          </tr>
-                                                          <tr>
-                                                              <td colspan="3"><span id="errNama">
-                                                                  
-                                                              </span></td>
-                                                          </tr>
-                                                          <tr>
-                                                              <td>Kelas</td>
-                                                              <td>:</td>
-                                                              <td><select name="kelas" id="kelas" style="width: 100%;">
-                                                                  <option value="">Silahkan Pilih Kelas Anda</option>
-                                                                  <option value="IX A">IX A</option>
-                                                                  <option value="IX B">IX B</option>
-                                                                  <option value="IX C">IX C</option>
-                                                                  <option value="IX D">IX D</option>
-                                                                  <option value="IX E">IX E</option>
-                                                                  <option value="IX F">IX F</option>
-                                                                  <option value="IX G">IX G</option>
-                                                              </select></td>
-                                                          </tr>
-                                                          <tr>
-                                                              <td colspan="3"><span id="errKelas">
-                                                                  
-                                                              </span></td>
-                                                          </tr>
-                                                          <tr>
-                                                              <td>Sekolah</td>
-                                                              <td>:</td>
-                                                              <td><select name="sekolah" id="sekolah" style="width: 100%;">
-                                                                  <option value="">Silahkan Pilih Sekolah Anda</option>
-                                                                  <option value="SMPN 33 Banjarmasin">SMPN 33 Banjarmasin</option>
-                                                              </select></td>
-                                                          </tr>
-                                                          <tr>
-                                                              <td colspan="3"><span id="errSekolah">
-                                                                  
-                                                              </span></td>
-                                                          </tr>
-                                                      </table>
-                                                      <a type="button" class="btn btn-outline-success m-2" data-toggle="modal" data-target="#ModalKembali">Kembali ke Materi</a>
-                                                      <a id="mulai1" class="btn btn-success" onclick="mulai1();" style="cursor: pointer;">Mulai Kuis</a>
-                                                  </div>                                                  
-                                                </div>
-                                            </center>
-                                        </div>
-                              </div>
-                          </div>
-                            </div>
-                    <!-- /.container-fluid -->
+<!-- Page Wrapper -->
+<div id="wrapper" >
+    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: rgb(14, 111, 61);  height: auto;" >
     
-                
-                
-                        </div>
-                    </div>
-                    <div id="kuis1" hidden>
-                        <div class="row" style="height: 500px; width: 100%; margin-top: -15px;">
-                            <div class="mb-1 col-sm-3 bg-white border border-success isicontent">
-                                <div class="h5 font-weight-bold">
-                                    <h5 class="text-truncate text-center bord bg-success text-white">Nomor Soal</h5>
-                                    <div class="card text-white bg-white" style="max-width: 100%; border: 2px solid green;">
-                                        <div class="card-body-12">
-                                            <button type="button" id="soal1" onclick="soal1();" class="btn btn-outline-success m-1 btnkuis">1</button>
-                                            <button type="button" id="soal2" onclick="soal2();" class="btn btn-outline-success m-1 btnkuis">2</button>
-                                            <button type="button" id="soal3" onclick="soal3();" class="btn btn-outline-success m-1 btnkuis">3</button>
-                                            <button type="button" id="soal4" onclick="soal4();" class="btn btn-outline-success m-1 btnkuis">4</button>
-                                            <button type="button" id="soal5" onclick="soal5();" class="btn btn-outline-success m-1 btnkuis">5</button>
-                                            <center>
-                                                <a id="submit1" class="btn m-3 btn-success" style="cursor: pointer;" data-toggle="modal" data-target="#ModalSubmit1">Selesai</a>
-                                            </center>
-                                        </div>
-                                      </div>
+     <!-- Sidebar - Brand -->
+     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/index.html">
+        <div class="sidebar-brand-icon rotate-n-8">
+            <i class="fa fa-home"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">Gaya</div>
+    </a>
+    <hr class="sidebar-divider my-0">
+      
+        <!-- Divider -->
+        
+        <!-- Materi 1 -->
+        <li class="nav-item">
+            <a id="sub1" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#materi1"
+                aria-expanded="true" aria-controls="materi1">
+                <i class="fas fa-fw fa-file-alt"></i>
+                <span style= "font-size: 13px;">Pengaruh Gaya Terhadap Benda</span>
+            </a>
+            <div id="materi1" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded" style= "font-size: 13px;">
+                  <a class="collapse-item " href="index.html">Pendahuluan</a>
+                  <hr class="sidebar-divider my-0 ">
+                  <a class="collapse-item"  href="merubahbenda.html">Gaya Mengubah<br> Bentuk Benda</a>
+                  <hr class="sidebar-divider my-0 ">
+                  <a class="collapse-item" href="bergerakdiam.html">Gaya Menyebabkan <br>Benda Bergerak Diam </a>
+                  <hr class="sidebar-divider my-0 ">  
+                  <a class="collapse-item" href="diambergerak.html">Gaya Menyebabkan <br>Benda Diam Bergerak </a>
+                  <hr class="sidebar-divider my-0 ">  
+                  <a class="collapse-item" href="didalamair.html">Gaya Ke Atas di Dalam <br>Air</a>
+                  <hr class="sidebar-divider my-0 ">  
+                  <a class="collapse-item ml-3 mr-3 aktif" style="color: #0f7041;" href="kuis1.html">Kuis 1</a>
 
-                                    <div class="soal" style="font-weight: normal;">
-                                    </div>
+                </div>
+            </div>
+        </li>
+
+          <!-- Divider -->
+          
+          <!-- Materi 2 -->
+          <li class="nav-item">
+              
+            <a id="sub2" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#materi2"
+                aria-expanded="true" aria-controls="materi2">
+                <i class="fas fa-fw fa-file-alt"></i>
+                <span style= "font-size: 15px;">Macam-Macam Gaya </span>
+            </a>
+            <div id="materi2" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded" style= "font-size: 13px;">
+                   
+                    <a class="collapse-item" href="otot.html">Gaya Otot </a>
+                    <hr class="sidebar-divider my-0 ">  
+                    <a class="collapse-item" href="pegas.html">Gaya Pegas</a>
+                    <hr class="sidebar-divider my-0 ">  
+                    <a class="collapse-item" href="listrikstatik.html">Gaya Listrik Statis</a>
+                    <hr class="sidebar-divider my-0 "> 
+                    <a class="collapse-item" href="magnet.html">Gaya Magnet</a>
+                    <hr class="sidebar-divider my-0 "> 
+                    <a class="collapse-item" href="gravitasi.html">Gaya Gravitasi</a>
+                    <hr class="sidebar-divider my-0 "> 
+                    <a class="collapse-item" href="gesek.html">Gaya Gesek</a>
+                    <hr class="sidebar-divider my-0 "> 
+                    <a class="collapse-item" href="kuis2.html">Kuis 2</a>
+                </div>
+            </div>
+        </li>
+
+
+       
+
+      
+        <!-- Rangkuman -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="rangkuman.html" 
+        aria-expanded="true" aria-controls="materi1">
+        <i class="fas fa-fw fa-file-pdf"></i>
+        <span style= "font-size: 13px;">Rangkuman</span>
+    </a>
+    </li>
+
+
+        <!-- Evaluasi -->
+        <li class="nav-item  ">
+          <a class="nav-link collapsed" href="evaluasi.html" 
+          aria-expanded="true" aria-controls="materi1">
+          <i class="fas fa-fw fa-file-signature"></i>
+          <span style= "font-size: 13px; color: white;">Evaluasi</span>
+      </a>
+      </li>
+
+    </ul>
+
+    <!-- Sidebar -->
+    
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content" style="background-color: rgb(233, 255, 209)">
+
+           
+            <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="container-fluid" >
+
+                <!-- Content Row -->
+                
+                <div class="full hilang" > <a href="">Mulai</a> </div>
+        
+        <!-- KONTEN -->
+        <div class="konten" id="konten" style="top:0; background-color: rgb(233, 255, 209)" >       
+
+            <!-- BADAN KONTEN -->
+
+            <div class="inti-konten" >
+
+                <div class="data" id="data">
+
+                    <div class="data_diri">
+                        <div class="container px-lg-5">
+                            <div class="row mx-lg-n5">
+                              <div class=" py-3 px-lg-5 ">
+                                
+    
+                                <div class="arahan" > 
+                                    <h5><strong>Petujuk:</strong></h5>
+                                    <ul style="color: black;"> 
+                                    <li>Terdapat 10 soal pilihan ganda pada kuis ini.</li>
+                                   <li>Waktu untuk mengerjakan kuis 30 menit.</li>
+                                   <li>Sebelum mengerjakan soal, isi nama, kelas, dan sekolah pada kolom yang tersedia kemudian tekan "Mulai".</li>
+                                    <!-- <p>- &nbsp;Jika kolom bewarna merah, berarti masih terdapat isian kosong.</p> -->
+                                </ul>
                                 </div>
-                                <div class="h6">
-                                    <h5>Keterangan: </h5>
-                                    <a class="btn btn-light btn-outline-success text-center text-dark mb-1" style="width: 30%; cursor: text;">Putih</a>  = Belum dijawab <br>
-                                    <a class="btn btn-success text-center active" style="width: 30%; cursor: text;">Hijau</a> = Sudah dijawab <br>
-                                    Setelah menjawab semua pertanyaan, silahkan tekan tombol "Selesai"
-                                </div>
+    
+                                <br>
+                              </div>
+
+
+                              <div class="col py-0 px-lg-5 " style="font-weight:bold ;">
+                                <label for="nama"> Nama :
+                                    <input type="text" id="nama" class="maju" placeholder="Masukkan nama anda . . . ">
+                                </label>
+                                <label for="nama"> Sekolah :
+                                    <input type="text" id="sekolah" name="sekolah" class="mundur" placeholder="Nama sekolah . . . ">                               
+                                </label>
+                                <label for="nama"> Kelas :
+                                    <select id="kelas" name="kelas" class="maju aaa" >
+                                        <option value="0" selected="selected"> Pilih Kelas </option>
+                                        <option value="1">IV(Empat)</option>
+                                     
+                                    </select>
+                                </label>
+                                <!-- <label for="nama"> Kelas :
+                                    <input type="text" id="kelas" name="kelas" class="maju aaa" placeholder="Kelas . . . ">                                
+                                </label> -->
+    
+                                <div class="lanjut">MULAI</div>
+                              </div>
                             </div>
-                            <div class="mb-1 col-sm-9 bg-white border border-success isicontent">
-                              <div class="h5 font-weight-bold">
-                                  <div class="text-truncate text-center float-right rounded-pill p-1" id="waktu" style="font-weight: normal; border: 3px solid green;"></div>
-                                  <div class="text-truncate" style="font-weight: normal;">Pertanyaan <span id="indeks"></span> dari 5</div>
-                                  <hr style="border-top: 3px dashed green;">
-                                  <div class="soal" style="font-weight: normal;">
-                                      <div class="m-3">
-                                        <div class="list-soal">
-                                        
-                                        </div>
-                                      </div>
-                                </div>
-                            </div>
-                            <div class="">
-                                <a id="soalPrev" class="btn btn-success" onclick="" style="cursor: pointer;" hidden>Sebelumnya</a>
-                                <a id="soalNext" class="btn btn-success" onclick="soal2();" style="cursor: pointer;">Selanjutnya</a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="hasilKuis1" hidden>
-                        <div class="row" style="height: 500px; width: 100%; margin-top: -15px;">
-                            <div class="mb-1 col-sm bg-white border border-success isicontent">
-                              <div class="h5 font-weight-bold">
-                                  <div class="h3 text-center" style="font-weight: normal;">Hasil Kuis 1</div>
-                                  <hr style="border-top: 3px dashed green;">
-                                  <div id="hasilL" class="hasil" style="font-weight: normal;" hidden>
-                                    <center>
-                                        <div class="m-5" style="width: 75%; border: 2px solid rgb(27, 156, 27);">
-                                            <table>
-                                                <tr>
-                                                    <td style="width: 40%;">Nama Lengkap</td>
-                                                    <td class="text-center" style="width: 20%;"> : </td>
-                                                    <td style="width: 40%;"><span id="namaHL"></span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Kelas</td>
-                                                    <td class="text-center"> : </td>
-                                                    <td><span id="kelasHL"></span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Sekolah</td>
-                                                    <td class="text-center"> : </td>
-                                                    <td><span id="sekolahHL"></span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Nilai</td>
-                                                    <td class="text-center"> : </td>
-                                                    <td><span id="nilaiHL"></span></td>
-                                                </tr>
-                                            </table>
-                                            <a id="Back1" class="btn btn-success m-3" href="index.html" style="cursor: pointer;">Kembali ke Materi</a>
-                                            <a id="Next1" class="btn btn-success m-3" href="index2.html" style="cursor: pointer;">Materi berikutnya</a>
-                                            <div class="alert alert-success" role="alert">
-                                                Selamat! Nilai dari hasil kuis anda di atas KKM, anda bisa lanjut ke materi berikutnya.
-                                            </div>
-                                        </div>
-                                    </center>
-                                  </div>
-                                  <div id="hasilTL" class="hasil" style="font-weight: normal;" hidden>
-                                    <center>
-                                        <div class="m-5" style="width: 75%; border: 2px solid rgb(27, 156, 27);">
-                                            <table>
-                                                <tr>
-                                                    <td style="width: 40%;">Nama Lengkap</td>
-                                                    <td class="text-center" style="width: 20%;"> : </td>
-                                                    <td style="width: 40%;"><span id="namaHTL"></span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Kelas</td>
-                                                    <td class="text-center"> : </td>
-                                                    <td><span id="kelasHTL"></span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Sekolah</td>
-                                                    <td class="text-center"> : </td>
-                                                    <td><span id="sekolahHTL"></span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Nilai</td>
-                                                    <td class="text-center"> : </td>
-                                                    <td><span id="nilaiHTL"></span></td>
-                                                </tr>
-                                            </table>
-                                            <a id="Back1" class="btn btn-success m-3" href="index.html" style="cursor: pointer;">Kembali ke Materi</a>
-                                            <div class="alert alert-danger" role="alert">
-                                                Nilai dari hasil kuis anda di bawah KKM, silahkan tekan "Kembali ke Materi" untuk mengulang materi kembali.
-                                            </div>
-                                        </div>
-                                    </center>
-                                  </div>
-                            </div>
-                            </div>
-                        </div>
+                          </div>
+                        
+
+                        <!--<p>DATA DIRI</p>-->
+                        <br>
+                        
                     </div>
                 </div>
-            <!-- End of Main Content -->
+                
+                <!-- <div class="up hilang" id="up">
+                    <center><h1>Latihan 1</h1></center>
+                    <hr>
+                </div> -->
 
-            <!-- Footer -->
-            <!-- <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; QE 2021</span>
-                    </div>
+                <!-- KONTEN KIRI -->
+                <div class="kiri hilang" style="background-color: rgb(233, 255, 209)" id="kiri">
+                    
+                    
+                    <article >
+                        <div id="timer">30 : 00</div>
+                    </article>
                 </div>
-            </footer> -->
-            <!-- End of Footer -->
+                <!-- BATAS KONTEN KIRI -->
+
+
+                <!-- KONTEN DI KANAN -->
+                <div class="kanan hilang" style="background-color: rgb(233, 255, 209)" id="kanan">
+                    
+                   
+                    <div class="bg_nav">
+                      
+                        <div class="bg_full">
+                            <p class="text">Nomor Soal</p>
+                         
+                        </div>
+                        <div class="bg_soal">
+                            <div class="soal_nav belum">
+                                <p class="text fontsedang ">1</p>
+                            </div>
+                            <div class="soal_nav belum">
+                                <p class="text fontsedang">2</p>
+                            </div>
+                            <div class="soal_nav belum">
+                                <p class="text fontsedang">3</p>
+                            </div>
+                            <div class="soal_nav belum">
+                                <p class="text fontsedang">4</p>
+                            </div>
+                            <div class="soal_nav belum">
+                                <p class="text fontsedang">5</p>
+                            </div>
+                            <div class="soal_nav belum">
+                                <p class="text fontsedang">6</p>
+                            </div>
+                            <div class="soal_nav belum">
+                                <p class="text fontsedang">7</p>
+                            </div>
+                            <div class="soal_nav belum">
+                                <p class="text fontsedang">8</p>
+                            </div>
+                            <div class="soal_nav belum">
+                                <p class="text fontsedang">9</p>
+                            </div>
+                            <div class="soal_nav belum">
+                                <p class="text fontsedang">10</p>
+                            </div>
+             
+                            <div class="clear"></div>
+                            <div class="ket fontsedang">
+                                <p>Keterangan:</p>
+                                <p><span class="belum">Putih</span> = Belum dijawab</p>
+                                <p><span class="sudah">Hijau</span> = Sudah dijawab</p>
+                            </div>
+                            <div class="selesai">SELESAI</div>
+                        </div>
+
+                    </div>
+              
+
+                </div>
+                <!-- BATAS KONTEN KANAN -->
+
+                <!-- skor -->
+                <div class="dataaa hilang">
+                    <center>
+                    <div class="skornya">
+
+                        <h1>Hasil Evaluasi</h1>
+                        <br>
+                        <table class="t_hasil">
+                            <tr>
+                                <td class="ket_hasil">
+                                    <p>NAMA</p>
+                                </td>
+                                <td>
+                                    <p>:</p>
+                                </td>
+                                <td>
+                                    <p class="nama ket_hasilnya">SISWA</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ket_hasil">
+                                    <p>SEKOLAH</p>
+                                </td>
+                                <td>
+                                    <p>:</p>
+                                </td>
+                                <td>
+                                    <p class="sekolah ket_hasilnya">SEKOLAH</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ket_hasil">
+                                    <p>KELAS</p>
+                                </td>
+                                <td>
+                                    <p>:</p>
+                                </td>
+                                <td>
+                                    <p class="kelas ket_hasilnya">7</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ket_hasil">
+                                    <p>HARI</p>
+                                </td>
+                                <td>
+                                    <p>:</p>
+                                </td>
+                                <td>
+                                    <p class="hari ket_hasilnya">Senin</p>
+                                </td>
+                            </tr>
+                            <tr style="display: none;">
+                                <td class="ket_hasil">
+                                    <p>WAKTU SELESAI</p>
+                                </td>
+                                <td>
+                                    <p>:</p>
+                                </td>
+                                <td>
+                                    <p class="waktu ket_hasilnya">12:00</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ket_hasil">
+                                    <p>SKOR</p>
+                                </td>
+                                <td>
+                                    <p>:</p>
+                                </td>
+                                <td>
+                                    <p class="hasill ket_hasilnya">50</p>
+                                </td>
+                            </tr>
+                        </table>   
+
+                    <div id="ulang" class="ket_ulang hilang">
+                        <p class="pad">Nilai kamu kurang dari kkm</p>
+                        <button class="tmbl" button onclick="location.href='kuis1.html'">Ulang Kuis</a></button>
+                        <button class="tmbl" button onclick="location.href='pendahuluan.html'">Lanjut kemateri berikutnya</a></button>
+                    </div>
+                    
+                    <button id="next" class="tmbl hilang" button onclick="location.href='pengantar2.html'">Materi Selanjutnya</button><br>
+
+                    </div>
+                </center>
+                </div>
 
             </div>
+            <!-- /.container-fluid -->
 
-        <!-- End of Content Wrapper -->  
+            
+
         </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <!-- <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright &copy; QE 2021</span>
+                </div>
+            </div>
+        </footer> -->
+        <!-- End of Footer -->
+
     </div>
-    <!-- End of Page Wrapper -->
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Modal Submit1 -->
-    <div class="modal fade" id="ModalSubmit1" tabindex="-1" role="dialog" aria-labelledby="ModalSubmit1Title" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header bg-success text-white">
-            <h5 class="modal-title text-center" id="ModalSubmit1Title">Konfirmasi</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body">
-            Apakah anda yakin ingin menyelesaikan Kuis?
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">kembali</button>
-            <button type="button" onclick="cekKuis1()" class="btn btn-success">Yakin</button>
-            </div>
-        </div>
-        </div>
-    </div>
+    <!-- Modal -->
 
-    <!-- Modal Kuis Kosong -->
-    <div class="modal fade" id="ModalKuisKosong" tabindex="-1" role="dialog" aria-labelledby="ModalKuisKosongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title text-center" id="ModalSubmit2Title">Peringatan</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-            <div class="modal-body">
-                Jawaban masih ada yang kosong!
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">kembali</button>
-            </div>
-        </div>
-        </div>
-    </div>
-
-    <!-- Modal Bergerak -->
-    <div class="modal fade" id="mouseModal" tabindex="-1" role="dialog" aria-labelledby="mouseModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header bg-danger text-white">
-              <h5 class="modal-title" id="mouseModalTitle"> <i class="fas fa-exclamation-circle"></i> Peringatan</h5>
-            </div>
-            <div class="modal-body" style="color: black;">
-              Hai! kamu kok diam aja? Lanjut belajar ya...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" onclick="mouseTes();" data-dismiss="modal">OK</button>
-            </div>
-          </div>
-        </div>
-    </div>
-    
-    <audio id="myAudio">
-      <source src="../assets/audio/alarm.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-
-    <!-- Modal Kembali -->
-    <div class="modal fade" id="ModalKembali" tabindex="-1" role="dialog" aria-labelledby="ModalKembaliTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title text-center" id="ModalKembaliTitle">Konfirmasi</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                Apakah anda yakin ingin kembali?
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
-            <button type="button" onclick="window.location.href='../materi/sub1_4.html'" class="btn btn-danger">Yakin</button>
-        </div>
-        </div>
-        </div>
-    </div>
-
-    <!-- Modal Home -->
-    <div class="modal fade" id="ModalHome" tabindex="-1" role="dialog" aria-labelledby="ModalHomeTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title text-center" id="ModalHomeTitle">Konfirmasi</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                Apakah anda yakin ingin kembali Menu Utama?
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
-            <button type="button" onclick="window.location.href='../index.html'" class="btn btn-danger">Yakin</button>
-        </div>
-        </div>
-        </div>
-    </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
@@ -428,16 +424,12 @@
     <!-- Page level custom scripts -->
     <script src="../assets/js/demo/chart-area-demo.js"></script>
     <script src="../assets/js/demo/chart-pie-demo.js"></script>
-
-    <!-- SDK Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
-
-    <!-- JS Pribadi -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
     <script src="../assets/js/script.js"></script>
-    <script src="../assets/js/monitor.js"></script>
-    <script src="../assets/js/latihan1.js"></script>
-    <script src="../assets/js/simpank1.js"></script>
+    <script src="../assets/js/load-mathjax.js"></script>
+    <script src="tutorial.js"></script>
+    <script src="latihan1.js"></script>
 
 </body>
 

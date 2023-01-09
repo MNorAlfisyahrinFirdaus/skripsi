@@ -1,0 +1,93 @@
+[{
+    "soal0": {
+        "soal": "Gaya yang menyebabkan semua benda jatuh menuju ke bumi adalah . . .",
+        "a": "a. Gaya magnet ",
+        "b": "b. Gaya gravitasi ",
+        "c": "c. Gaya Tarik bulan ",
+        "d": "d. Gaya tolak bumi ",
+        "benar": "b"
+    }
+},{
+    "soal1": {
+        "soal":"Dalam Sains, tarikan atau dorongan disebut . . .",
+        "a": "a. Tenaga",
+        "b": "b. Kalori",
+        "c": "c. Energi",
+        "d": "d. Gaya",
+        "benar": "d"        
+    }        
+},{
+    "soal2": {
+        "soal": "Kekuatan yang dimiliki benda yang bermuatan listrik untuk menarik benda di sekitarnya, pengertian dari . . . ",
+        "a": "a. Gaya magnet",
+        "b": "b. Gaya gravitasi",
+        "c": "c. Gaya pegas",
+        "d": "d. Gaya listrik statis ",
+        "benar": "d"
+    }
+},{
+    "soal3": {
+        "soal": "kekuatan yang ditimbulkan oleh karet atau pegas yang diregangkan, pengertian dari ...",
+        "a": "a. Gaya magnet ",
+        "b": "b. Gaya gravitasi ",
+        "c": "c. Gaya pegas ",
+        "d": "d. Gaya otot",
+        "benar": "c"
+    }
+},{
+    "soal4": {
+        "soal": "gaya yang dilakukan oleh otot-otot tubuh kita disebut ....",
+        "a": "a. Gaya pegas ",
+        "b": "b. Gaya gravitasi ",
+        "c": "c. Gaya otot",
+        "d": "d. Gaya  magnet",
+        "benar": "c"
+    }
+    
+   
+},{
+    "soal5": {
+        "soal": "Bola basket yang dilempar ke dalam ke keranjang dan kembali jatuh ke bawah disebabkan gaya ....",
+        "a": "a. Gaya pegas ",
+        "b": "b. Gaya gravitasi ",
+        "c": "c. Gaya otot",
+        "d": "d. Gaya  magnet",
+        "benar": "b"
+    }
+},{
+    "soal6": {
+        "soal": "Manusia dan hewan adalah mahluk hidup yang selalu beraktivitas. Dalam melakukan aktivitasnya manusia dan hewan menggunakan gaya ....",
+        "a": "a. Gaya pegas ",
+        "b": "b. Gaya gravitasi ",
+        "c": "c. Gaya otot",
+        "d": "d. Gaya  magnet",
+        "benar": "c"
+    }
+},{
+    "soal7": {
+        "soal": "Contoh gaya pegas di kegiatan sehari-hari adalah ....",
+        "a": "a. Alfi berburu berburu menggunakan ketapel karet yang ditarik ",
+        "b": "b. Buah jatuh dari pohon ",
+        "c": "c. Edi mengangkat meja",
+        "d": "d. Putri menonton pertandingan basket",
+        "benar": "a"
+    }
+},{
+    "soal8": {
+        "soal": "Penggaris plastik yang digosokkan secara berulang-ulang pada rambut kering memiliki gaya  ....",
+        "a": "a. Gaya otot ",
+        "b": "b. Gaya pegas ",
+        "c": "c. Gaya listrik statis",
+        "d": "d. Gaya  magnet",
+        "benar": "c"
+    }
+},{
+    "soal9": {
+        "soal": "Di bawah ini adalah gaya yang termasuk tarikan, kecuali ....",
+        "b": "b. Menutup Pintu ",
+        "a": "a. Menarik gerobak ",
+        "c": "c. Menarik benang layang-layang",
+        "d": "d. Menarik pintu",
+        "benar": "a"
+    }
+}]
