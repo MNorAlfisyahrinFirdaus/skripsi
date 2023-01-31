@@ -15,7 +15,7 @@ var firebaseConfig = {
    
 
   
-  let wktu = document.querySelector('.waktu');
+let wktu = document.querySelector('.waktu');
 let nilaiwktu=0;
 
 let selanjutnya = document.querySelector('.lanjut');
@@ -65,6 +65,16 @@ selanjutnya.addEventListener('click', function () {
         cek += 1;
         cek3 = 3;
     }
+
+    function tjk1(tjk1) {
+        var x = document.getElementById(tjk1);
+      
+        if (x.className.indexOf("hilang") == -1) {
+          x.className += " hilang";
+        } else {
+          x.className = x.className.replace("hilang", "");
+        }
+      }
 
     // console.log(sekolahfix);
 
@@ -688,5 +698,25 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jawab) {
     database.set(task);
 
 }
+function petunjukk() {
+    var x = document.getElementsByClassName("dalam");
+    if (x[0].style.display === "none") {
+      x[0].style.display = "block";
+    } else {
+      x[0].style.display = "none";
+    }
+  }
+  let petunjuknya = document.querySelectorAll('.petunjuk');
+let isinya = document.querySelectorAll('.isinya');
+for (let i = 0; i < petunjuknya.length; i++) {
+      petunjuknya[i].addEventListener('click', function () {
+      if (isinya[i].className.indexOf('hilang') == -1) {
+            isinya[i].className += ' hilang';
+      } else {
+            isinya[i].className = isinya[i].className.replace('hilang', '');
+      }
+      })
+}
+
 
    

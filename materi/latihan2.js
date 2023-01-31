@@ -686,7 +686,24 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jawab) {
 
     let database = firebase.database().ref("kuis2/" + counter);
     database.set(task);
-
 }
-
+function petunjukk() {
+    var x = document.getElementsByClassName("dalam");
+    if (x[0].style.display === "none") {
+      x[0].style.display = "block";
+    } else {
+      x[0].style.display = "none";
+    }
+  }
+  let petunjuknya = document.querySelectorAll('.petunjuk');
+let isinya = document.querySelectorAll('.isinya');
+for (let i = 0; i < petunjuknya.length; i++) {
+      petunjuknya[i].addEventListener('click', function () {
+      if (isinya[i].className.indexOf('hilang') == -1) {
+            isinya[i].className += ' hilang';
+      } else {
+            isinya[i].className = isinya[i].className.replace('hilang', '');
+      }
+      })
+}
    

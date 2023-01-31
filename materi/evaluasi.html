@@ -126,7 +126,7 @@
 
 
         <!-- Evaluasi -->
-        <li class="nav-item ml-0 mr-0 aktif22 ">
+        <li class="nav-item ml-2 mr-2 aktif ">
           <a class="nav-link collapsed" href="evaluasi.html" 
           aria-expanded="true" aria-controls="materi1">
           <i class="fas fa-fw fa-file-signature"></i>
@@ -159,52 +159,49 @@
             <!-- BADAN KONTEN -->
 
             <div class="inti-konten" >
-
-                <div class="data" id="data">
-
+                <p>
+                    <h5 class="kuis">&nbsp;Evaluasi</h5>
+                  </p>
+                  <div class="data" id="data">
                     <div class="data_diri">
-                        <div class="container px-lg-5">
-                            <div class="row mx-lg-n5">
-                              <div class=" py-3 px-lg-5 ">
-                                
-    
-                                <div class="arahan" > 
-                                    <h5><strong>Petujuk:</strong></h5>
-                                    <ul style="color: black;"> 
-                                    <li>Terdapat 10 soal pilihan ganda pada kuis ini.</li>
-                                   <li>Waktu untuk mengerjakan kuis 30 menit.</li>
-                                   <li>Sebelum mengerjakan soal, isi nama, kelas, dan sekolah pada kolom yang tersedia kemudian tekan "Mulai".</li>
-                                    <!-- <p>- &nbsp;Jika kolom bewarna merah, berarti masih terdapat isian kosong.</p> -->
-                                </ul>
-                                </div>
-    
-                                <br>
-                              </div>
+                        <div class="petunjuk">
+                            <i class="far fa-hand-point-right"></i>&nbsp; Petunjuk (klik saya)
+                        </div>
+                        <div class="isinya">   
+                            <ul style="color: black;"> 
+                            <li>Terdapat 10 soal pilihan ganda pada kuis ini.</li>
+                           <li>Waktu untuk mengerjakan kuis 30 menit.</li>
+                           <li>Sebelum mengerjakan soal, isi nama, kelas, dan sekolah pada kolom yang tersedia kemudian tekan "Mulai".</li>
+                            <!-- <p>- &nbsp;Jika kolom bewarna merah, berarti masih terdapat isian kosong.</p> -->
+                        </ul>
+                          </div>
+                          <br>
+                          <div class="col py-0 px-lg-5 " style="font-weight:bold ;">
+                            <label for="nama"> Nama :
+                                <input type="text" id="nama" class="maju" placeholder="Masukkan nama anda . . . ">
+                            </label>
+                            <label for="nama"> Sekolah :
+                                <input type="text" id="sekolah" name="sekolah" class="mundur" placeholder="Nama sekolah . . . ">                               
+                            </label>
+                            <label for="nama"> Kelas :
+                                <select id="kelas" name="kelas" class="maju aaa" >
+                                    <option value="0" selected="selected"> Pilih Kelas </option>
+                                    <option value="1">IV(Empat)</option>
+                                </select>
+                            </label>
+                            <!-- <label for="nama"> Kelas :
+                                <input type="text" id="kelas" name="kelas" class="maju aaa" placeholder="Kelas . . . ">                                
+                            </label> -->
 
-
-                              <div class="col py-0 px-lg-5 " style="font-weight:bold ;">
-                                <label for="nama"> Nama :
-                                    <input type="text" id="nama" class="maju" placeholder="Masukkan nama anda . . . ">
-                                </label>
-                                <label for="nama"> Sekolah :
-                                    <input type="text" id="sekolah" name="sekolah" class="mundur" placeholder="Nama sekolah . . . ">                               
-                                </label>
-                                <label for="nama"> Kelas :
-                                    <select id="kelas" name="kelas" class="maju aaa" >
-                                        <option value="0" selected="selected"> Pilih Kelas </option>
-                                        <option value="1">IV(Empat)</option>
-                                     
-                                    </select>
-                                </label>
-                                <!-- <label for="nama"> Kelas :
-                                    <input type="text" id="kelas" name="kelas" class="maju aaa" placeholder="Kelas . . . ">                                
-                                </label> -->
-    
-                                <div class="lanjut">MULAI</div>
-                              </div>
-                            </div>
+                            <div class="lanjut">MULAI</div>
                           </div>
                         
+                    
+
+                    <!--<p>DATA DIRI</p>-->
+                    <br>
+            
+                     
 
                         <!--<p>DATA DIRI</p>-->
                         <br>
@@ -303,7 +300,7 @@
                             <div class="ket fontsedang">
                                 <p>Keterangan:</p>
                                 <p><span class="belum">Putih</span> = Belum dijawab</p>
-                                <p><span class="sudah">Hijau</span> = Sudah dijawab</p>
+                                <p ><span class="sudah">Hijau</span> = Sudah dijawab</p>
                             </div>
                             <div class="selesai">SELESAI</div>
                         </div>

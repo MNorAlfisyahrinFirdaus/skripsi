@@ -92,7 +92,16 @@ transform: scale(1.2);
 		height:60%;
 		font-family:arial;
 		font-size:8pt;
-		margin-top: 8%;
+		margin-top: 18%;
+	}
+	.jumbotron .display-1 {
+		color:rgb(78, 112, 95);
+		font-family: 'Share', cursive;
+		font-weight: bold;
+		font-size: 80px;
+		margin-top: 30px;
+		text-shadow: 5px 5px 0px #faf8f6, 10px 10px 0px #0a0304;
+	  
 	}
 	.margin{
 		width: 40%;
@@ -101,10 +110,10 @@ transform: scale(1.2);
 	}
 	.gambaricon{
 		float:left;
-			width:65%;
-			height:50%;
+			width:120px;
+			height:120px;
 		margin-top: 10px;
-		margin-left: 0px;
+		margin-left: -10px;
 	}
 	.gambaricon:hover{
 		transform: scale(1.1);

@@ -14,8 +14,7 @@ mjx-container {
 }
 
 .text {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
     margin-top: 10px;
 }
 
@@ -30,6 +29,7 @@ mjx-container {
 }
 
 .bg_full {
+    margin-top: -60px;
     width: 100%;
     text-align: center;
     padding: 0px ;
@@ -38,6 +38,7 @@ mjx-container {
     border-right: 2px solid black;
     border-left: 2px solid black;
     color: white;
+    font-family: cursive;
     
     
 }
@@ -54,15 +55,13 @@ mjx-container {
 }
 
 .soal_nav {
-    width: 10%;
-    height: 20%;
-   
+    width: 8%;
     text-align: center;
     border: 2px solid black;
-    border-radius:0px 0 0 0px;
+    border-radius:5px 5px 5px 5px;
     float: left;
     margin-left: 8.5%;
-    margin-top: 10px;
+    margin-top: 2.9px;
     box-sizing: border-box;
     color: black;
 }
@@ -95,14 +94,14 @@ mjx-container {
 }
 
 .fontsedang {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 0px;
 }
 
 .ket {
     width: 100%;
     margin-left: 8.5%;
-    margin-top: 3px;
+    margin-top: 0px;
     font-family:'Bahnschrift' ;
     
 }
@@ -114,22 +113,25 @@ mjx-container {
 .selesai {
     margin-top: 10px;
     font-family:'Bahnschrift' ;
-    font-size: 20px;
+    font-size: 15.8px;
     text-align: center;
     width: 70%;
     background-color:  rgb(18, 82, 49);
     cursor: pointer;
-    height: 30px;
+    height: 25px;
     border-radius: 6px;
     /* line-height: 20px; */
     margin-left: 15%;
-    border: 2px solid black;
+    border: 2px  black;
     color: white;
 }
 
-.selesai:hover {
-    background-color:  rgb(79, 113, 95);
-}
+.selesai:hover {background-color: #536c0d}
+.selesai:active {
+	background-color: #5b846d;
+	box-shadow: 0 5px #666;
+	transform: translateY(3px);
+	}
 
 .hasil {
     background-color: rgb(14, 111, 61);
@@ -196,9 +198,9 @@ mjx-container {
 
 .no p {
     margin-left: 20px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 17px;
     color: white;
+    font-family: cursive;
 }
 
 .inti_pertanyaan {
@@ -208,7 +210,8 @@ mjx-container {
     background-color: white;
     padding: 10px 20px;
     height: auto;
-    font-family:Bahnschrift ;font-size:19px;
+    font-family:Bahnschrift ;
+    font-size:18px;
    
 }
 
@@ -254,7 +257,7 @@ mjx-container {
 .bg_pilihan .textnya,
 .checkbox .textnya {
     margin-left: 30px;
-    margin-bottom: 5px;
+    margin-bottom: -10px;
     margin-top: -10px;
 }
 
@@ -285,6 +288,7 @@ mjx-container {
 
 .nav_pilihan {
     border-radius: 50%;
+    border: #19222a solid 2px;
 }
 
 .nav_pilihan:after {
@@ -301,53 +305,66 @@ span {
 
 
 /* akhir button */
-
-
 .nav_sebelum {
-    background-color:  rgb(14, 111, 61);;
-    width: 24%;
-    height: 42px;
-    padding: 5px;
+    color: rgb(239, 236, 236);
+    font-weight: 500;
+    margin-left: 143px;
+    cursor: pointer;
+    display: inline-block;
+    background-color:  rgb(14, 111, 61);
+    width: 18%;
+    height:34px ;
+    padding: 4px;
+    padding-top:5px ;
     text-align: center;
-    font-family:'Bahnschrift' ;
-    
-    margin-top: 0px;
-    margin-left: 135px;
-    border-radius: 10px;
-    border: 2px solid black;
+    margin-top:10px;
+    font-family:cursive ;
+    border-radius: 6px;
+    border: 2px  black;
     cursor: pointer;
     display: inline-block;
     margin-right: 3%;
-    color: white;
 }
 
 .nav_sebelum:hover {
-    background-color: rgb(9, 64, 82);
-}
-
+    background-color: #536c0d}
+.nav_sebelum:active {
+        background-color: #5b846d;
+        box-shadow: 0 5px #666;
+        transform: translateY(3px);
+        }
 .nav_sebelum p {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .nav_selanjut {
+    color: rgb(239, 236, 236);
+    font-weight: 500;
+    margin-left: 8px;
+    cursor: pointer;
+    display: inline-block;
     background-color:  rgb(14, 111, 61);
-    width: 20%;
-    height:42px ;
-    padding: 5px;
+    width: 18%;
+    height:34px ;
+    padding: 4px;
+    padding-top:5px ;
     text-align: center;
     margin-top:10px;
-    font-family:'Bahnschrift' ;
-    border-radius: 10px;
-    border: 2px solid black;
+    font-family:cursive ;
+    border-radius: 6px;
+    border: 2px  black;
     cursor: pointer;
     display: inline-block;
     margin-right: 3%;
-    color: white;
 }
 
 .nav_selanjut:hover {
-    background-color: rgb(9, 64, 82);
-}
+    background-color: #536c0d}
+.nav_selanjut:active {
+        background-color: #5b846d;
+        box-shadow: 0 5px #666;
+        transform: translateY(3px);
+        }
 
 .nav_selanjut p {
     font-size: 11px;
@@ -392,42 +409,46 @@ span {
 }
 
 .petunjuk {
-    display: inline-block;
-    background-color: rgb(14, 111, 61);
-    width: 20%;
-    padding: 20px;
-    padding-top: 0;
-    overflow: hidden;
-    border-radius: 10px;
-    border: 1px solid  green;
-    border-style: dotted;
-    
-    font-size: 19px;
-    line-height: 30px;
-    margin: 0px;
-    
-    margin-top: -13px;
-    /* height: 30px; */
-    color: white;
-    font-family:'Bahnschrift' ;
+    background-color: #287449; /*ISI MATERI SUB BAB*/
+	font-family: cursive;
+	border: 2px dashed black;
+	color: rgb(255, 251, 251);
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 15px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	cursor: pointer;
+	border-radius: 15px;
+	margin-top: 10px;
+	margin-left: 13px;
+	font-size: 14px;
+    width: auto;
 }
 
-.petunjuk:hover {
-    cursor: pointer;
-}
+.petunjuk:hover {background-color: #615a14}
+	
+.petunjuk:active {
+	background-color: #5b846d;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+	}
 
 .isinya {
-    color: black;
-    padding: 3px 10px;
-    border: 2px solid black;
-    border-radius: 0px 10px 10px 0px;
-    margin-left: 3px;
-    margin-top: -6x;
+    width:95% ;
+    padding-left:25px;
+    padding-top: 25px;
+    padding-right: 6px;
+    border: 2px dashed rgb(36, 117, 63);
+    background-color: rgb(219, 254, 219);
+    border-top-right-radius: 7px;
+    margin-left:10px;
+    margin-top: -20px;
     box-sizing: border-box;
-    font-size: 19px;
+    font-size: 18px;
     margin-right: 2px;
     font-family:'Bahnschrift' ;
-
 }
 
 .tmbl:hover{
@@ -496,22 +517,24 @@ label {
     font-size: 18px;
 }
 
+
+    
 .tmbl {
     display: inline-block;
     width: auto;
-    font-family:Bahnschrift ;
+    font-family:cursive ;
     color: white;
-    padding: 5px 5px;
+    padding: 3px;
     background-color:  rgb(14, 111, 61);
     border: 2px solid black;
-    margin-top: 5%;
+    margin-top:15px;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
-    padding: 10px 15px;
     text-decoration: none;
 }
+
 
 
 
@@ -532,6 +555,7 @@ td {
     padding: 5px !important;
     color: black;
     margin-right:10px ;
+    font-family: cursive;
 }
 
 a {
@@ -542,6 +566,7 @@ a {
 .pad{
     padding: 0 10px;
     padding-top: 15px;
+    font-family: cursive;
 }
 
 h3{
@@ -551,22 +576,22 @@ h3{
 /* ---------------------------------------------------------------------------------- */
 
 @media (min-width : 992px) {
+    
     .tmbl {
         display: inline-block;
         width: auto;
-        font-family:'Bahnschrift' ;
+        font-family:cursive ;
         color: white;
-        padding: 5px 5px;
+        padding: 5px 10px;
         background-color:  rgb(14, 111, 61);
-        border: 2px solid black;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        font-weight: bold;
+        border: 2px black;
+        margin-top: 0px;
+        margin-left: 10px;
+        font-weight: 500;
         text-align: center;
-        font-size: 19px;
+        font-size: 15px;
         cursor: pointer;
-        border-radius: 5px;
-        padding: 10px 15px;
+        border-radius: 3px;
         text-decoration: none;
     }
 
@@ -577,7 +602,7 @@ h3{
         width: 480px;
         border: 2px solid rgb(14, 111, 61);
         border-radius: 10px;
-        
+        font-family: cursive;
     }
 
     td {
@@ -587,7 +612,7 @@ h3{
     .ket_hasilnya{
         padding-left: 5%;
         float: left;
-        
+        font-family: cursive;
         
     }
 
@@ -609,6 +634,7 @@ h3{
         min-height: auto;
         color:black;
         height: 460px;
+        font-family: cursive;
         /* padding-bottom: 30px; */
     }
     .skornya hr{
@@ -621,8 +647,8 @@ h3{
     }
 
     .petunjuk {
-        width: 50%;
-        font-size: 1.6vw;
+        width: 27%;
+        font-size: 17px;
     }
 
     .isinya {
@@ -630,16 +656,19 @@ h3{
         margin-right: 5px;
     }
 
-    .data_diri {
-        margin-top: 10px;
-        margin-left: 0px;
-        font-size: 1.6vw;
-        box-sizing: border-box;
-        border: 2px solid rgb(14, 111, 61);
-        padding-top: 10px 0px;
-        height: 77vh !important;
-        border-radius: 8px;
-    }
+   /* border awal mau masuk kuis */
+   .data_diri {
+    margin-top: 25px;
+    margin-left: 0px;
+    font-size: 1.6vw;
+    box-sizing: border-box;
+    border: 3px dashed rgb(17, 55, 35);
+    padding-top: 10px 0px;
+    height: 78vh !important;
+    border-radius: 4px;
+    background-color: white;
+}
+    
 
     label {
         width: 500px;
@@ -682,19 +711,20 @@ h3{
 
     .lanjut {
         display: inline-block;
-        width: 150px;
-        padding: 5px 5px;
+        width: 130px;
+        padding-top: 3px ;
+        padding: 2px;
         background: rgb(14, 111, 61);
         color: whitesmoke;
-        border-radius: 5px;
-        border: 2px solid black;
-        margin-top: 0px;
+        border-radius: 4px;
+        border: 0px solid black;
+        margin-top: 6px;
         font-family:'Bahnschrift' ;
         margin-bottom: 20px;
         font-weight: bold;
         text-align: center;
         margin-left: 40%;
-        font-size: 1.6vw !important;
+        font-size: 17px;
     }
 
     .lanjut:hover {
@@ -750,7 +780,7 @@ h3{
     }
 
     .nav_sebelum p {
-        font-size: 1.6vw;
+        font-size: 16.9px;
     }
 
     .nav_selanjut {
@@ -759,7 +789,8 @@ h3{
     }
 
     .nav_selanjut p {
-        font-size: 1.6vw;
+        font-size: 16.9px;
+        
     }
     
     .bg_pilihan,

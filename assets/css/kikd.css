@@ -17,7 +17,7 @@
 	margin-right: -13px;
 }
 .kikdmenu a{
-    background-image: linear-gradient(rgb(14, 111, 61), #04582e);
+    background-color: rgb(62, 132, 80);
 	padding:6%;
 	text-decoration: none;
 	color:white;
@@ -34,9 +34,10 @@
 	list-style-type: none;
 }
 .kikdmenu .active{
-	border-left: 7px solid red;
-	background-color: white;
+	background-color: #54ca87; /*ISI MATERI SUB BAB*/
+	font-family: cursive;
 	Color :black;
+	transform: translateY(4px);
 }
 .kikdmenu .active:hover{
 	color:black;

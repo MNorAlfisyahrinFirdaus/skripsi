@@ -19,11 +19,10 @@
 },{
     "soal2": {
         "soal": "Bola pimpong atau bola kasti dilempar kearah timbok berubah arah setelah membentur tembok, contoh dari gaya dapat menyebabkan...",
-        "a": "a. CaCO<sub>3</sub>(s) ",
-        "b": "b. Laju berkurangnya konsentrasi HCl",
-        "c": "c. Laju terbentuknya CaCl<sub>2</sub> ",
-        "d": "d. Laju Pembentukan CO<sub>2</sub>",
-        "e": "e. Laju pembentukan air",
+        "a": "a. Benda diam menjadi bergerak ",
+        "b": "b. Benda bergerak menjadi diam",
+        "c": "c. Benda berubah arah",
+        "d": "d. Benda bergerak lebih cepat",
         "benar":"d"
 
     }

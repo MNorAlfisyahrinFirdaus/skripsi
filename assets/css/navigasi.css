@@ -3,16 +3,10 @@
     margin-top: 5px;
     padding-bottom: 7px;
     padding-left: 690px;
-
-   
-
   }
   .navigasibawah a{
-   
     font-family: 'Poppins';
     font-size: 19px;
-   
-
   }
   .Nav-Lanjut{
     text-align: center;
@@ -20,7 +14,7 @@
     text-decoration: none;
     margin-top: -15px;
     padding-bottom:10px;
-    padding-left: 580px;
+    padding-left: 570px;
 
 }
 #navigasi.full{
@@ -30,28 +24,66 @@
   
     text-decoration: none;
     color: rgb(239, 236, 236);
-    font-family: 'Bahnschrift';
+    font-family: cursive;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 500;
      
 }
 .Nav-Lanjut .Lanjut{
     display: inline-block;
-    border: #0e4323 solid 2px;
-    border-radius: 5px;
-    padding: 1.5px;
+    border: rgb(11, 35, 19)  2px;
+    border-radius: 6px;
     padding-left: 27px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     padding-right: 27px;
-    font-size: 16.5px;
-    background-color:rgb(20, 134, 75);
+    font-size: 16px;
+    background-color:rgb(24, 116, 68);
 }
 .Nav-Lanjut .Lanjut:hover {
     cursor: pointer;
-    background-color: rgb(53, 74, 62);
+    background-color: #449b2a;
+}
+	
+	.Lanjut:active {
+	background-color: #5b846d;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+	}
+.petunjuk{
+  width: 46%;
+  float: left;
+  margin: 10px;
+  overflow: auto;
 }
 
+.kliktunjuk{
+  margin: 5px 0px 5px 0px;
+  background-color: rgb(168, 194, 251);
+  padding: 5px 13px;
+  border-radius: 5px;
+  width: 71%;
+  font-size: 16px;
+}
 
+.kliktunjuk a{
+  text-decoration: none;
+  color: black;
+}
 
+.tjk1{
+  min-height: 5px;
+  border-style: dotted;
+  border-color:rgb(3, 31, 75);
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 10px 0px 5px 0px;
+  display: block !important;
+}
+
+.tjk1 li{
+  margin: 0px 25px 5px 35px;
+}
   button {
     background-color:  rgb(20, 134, 75);
     font-family: 'Bahnschrift';
@@ -75,49 +107,69 @@
    
   }
   .kuisinter a{
-    background: rgb(40, 108, 72);
+    background: rgb(66, 125, 75);
     color: white;
-    border: 2px solid  rgb(52, 54, 54);
+    border-top:0;
+    border:2px  rgb(54, 58, 58);
     border-radius: 5px;
-    padding: 8px 20px;
+    padding: 9px 20px;
     margin-top: 10px;
-    font-family: 'Bahnschrift'; 
-    font-size: 17px;
-   
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: 500;
   }
-  .cekjawabinterganda{
-    background: rgb(44, 189, 165);
-    color: white;
-    border: 2px solid  rgb(110, 115, 117);
-    border-radius: 4px;
-    padding: 8px 10px;
-    margin-top: 10px;
-    font-family: 'Bahnschrift'; 
-    font-size: 19px;
+  .kuisinter a:hover {background-color: #536c0d}
+	
+	.kuisinter a:active {
+	background-color: #619276;
+	box-shadow: 0 5px #666;
+	transform: translateY(3px);
+	}
+  .cekjawabinterganda{ 
+  background-color: #287449; /*ISI MATERI SUB BAB*/
+	font-family: cursive;
+	border: 2px black;
+	color: rgb(255, 251, 251);
+	padding: 8px;
+	padding-right: 15px;
+	padding-left: 15px;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 8px;
+	margin-top: -15px;
+	margin-left: 1px;
+	font-size: 15.5px;
+  font-weight: 500;
   }
 
   .ulanginterganda{
     background: rgb(223, 223, 76);
     color: white;
-    border: 2px solid  rgb(110, 115, 117);
+    border: 2px  black;
     border-radius: 4px;
     padding: 8px 10px;
     margin-top: 10px;
-    font-family: 'Bahnschrift'; 
-    font-size: 19px;
+    font-family: cursive;
+    font-size: 15.5px;
+    font-weight: 500;
+    text-decoration: none;
+	  display: inline-block;
+	  cursor: pointer;
   }
   .btnangka{
-    border-radius: 6px 5px 5px 5px;
-    padding: 2px;
-    min-width: 53px;
-    background-image: linear-gradient(#00909e, #055d65);
+    border-radius: 2px 5px 2px 5px;
+    padding: 4px;
+    margin-left: 4px;
+    min-width: 40px;
     
     
   }
   .btnangka:hover{
-    color: black;
+    color: rgb(22, 16, 16);
   }
 
+  
   @media screen and (max-width: 760px) {
   .footer{
     position:unset;
@@ -149,17 +201,15 @@
     
   }
   .kuisinter a{
-    background: rgb(14, 111, 61);
-    width: auto;
-    height: auto;
+    background: rgb(66, 125, 75);
     color: white;
-    border: white 3px solid;
+    border-top:0;
+    border:2px solid  rgb(52, 54, 54);
     border-radius: 5px;
-    padding: 12px 20px;
+    padding: 10px 20px;
     margin-top: 10px;
-    
-    font-family: 'Bahnschrift'; 
-    font-size: 19px;
-    box-shadow: 0px 4px 12px 0px rgba(54, 49, 49, 0.2);
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: 500;
   } 
 }

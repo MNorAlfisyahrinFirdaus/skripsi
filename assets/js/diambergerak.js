@@ -41,3 +41,12 @@ function cekdiambergerakcs2B() {
                             Silahkan pilih jawaban yang benar
                             </div>`;
 }
+function petunjukk() {
+    var x = document.getElementsByClassName("dalam");
+    if (x[0].style.display === "none") {
+      x[0].style.display = "block";
+    } else {
+      x[0].style.display = "none";
+    }
+  }
+  
